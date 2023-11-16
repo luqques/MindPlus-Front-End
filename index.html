@@ -19,15 +19,20 @@
     }
   </script>
 </head>
-<body class="fundo justify-center">    
+<body>    
     <div class="page">
       <form class="formLogin">
-        <input type="username" placeholder="username" autofocus="true"/>
-        <input type="password" placeholder="password" autofocus="true"/> 
-        <div class="btn-sign-in justify-center">
-          <span id="sign-in">Sign In</span>
+        <div class="flex place-content-center">
+          <img src="assets/images/logo.png" class="logo-mindplus" alt="Logo MindPlus">
         </div>
-
+        <div><input type="email" id="email" placeholder="Usuário" autofocus="true"/></div>
+        <div><input type="password" id="senha" placeholder="Senha" autofocus="true"/></div>        
+        <div class="keep-logged-in flex place-content-center">
+          <input type="checkbox">Mantenha-me logado
+        </div>
+        <div id="btn-login" onclick="">
+          Entrar
+        </div>
       </form>
     </div>
   </div>
