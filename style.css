@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-.keep-logged-in {
+#keep-logged-in {
     font-family: Hammersmith-One;
     color: rgba(0, 0, 0, 0.70);
     align-items: center;
@@ -87,7 +87,7 @@
     cursor: pointer;
 }
 
-.keep-logged-in input {
+#keep-logged-in input {
     width: 15px;
     margin-bottom: 1px;
     margin-right: 10px;
