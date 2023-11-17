@@ -1,10 +1,27 @@
 
-var textoClicavel = document.getElementById('keep-logged-in');
-var meuCheckbox = document.getElementById('checkbox-keep-logged');
-textoClicavel.addEventListener('click', function() {
-    meuCheckbox.checked = !meuCheckbox.checked;
+var loggedText = document.getElementById('keep-logged-in');
+var loggedCheckbox = document.getElementById('checkbox-keep-logged');
+loggedText.addEventListener('click', function() {
+    loggedCheckbox.checked = !loggedCheckbox.checked;
+});
+loggedCheckbox.addEventListener('click', function() {
+    loggedCheckbox.checked = !loggedCheckbox.checked;
 });
 
-meuCheckbox.addEventListener('click', function() {
-    meuCheckbox.checked = !meuCheckbox.checked;
+const btnLogin = document.querySelector("#btn-login");
+btnLogin.addEventListener('click', () => {
+  const email = document.querySelector("#email");
+  const senha = document.querySelector("#senha");
+
+  if (!email.value) {
+    email.classList.add('invalid');
+  } else {
+    email.classList.remove('invalid');
+  }
+
+  if (!senha.value) {
+    senha.classList.add('invalid');
+  } else {
+    senha.classList.remove('invalid');
+  }
 });
