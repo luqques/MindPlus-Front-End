@@ -113,16 +113,11 @@ header {
     background-color:  rgba(0, 74, 173, 0.80);
  }
 
- .header-itens{
-    align-items: center;
-    
-
- }
+ 
  
 .header-itens li{
     display: flex;
-    
-   
+    width: 2px;
 }
  
 
