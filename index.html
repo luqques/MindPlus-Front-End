@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,24 +20,28 @@
     }
   </script>
 </head>
-<body>    
-    <div class="page">
-      <form class="formLogin">
-        <div class="flex place-content-center">
-          <img src="assets/images/logo.png" class="logo-mindplus" alt="Logo MindPlus">
+
+<body>
+  <div class="page">
+    <form class="formLogin">
+      <div class="flex place-content-center">
+        <img src="assets/images/logo.png" class="logo-mindplus" alt="Logo MindPlus">
+      </div>
+      <div><input type="email" id="email" placeholder="E-mail" autofocus="true" class="shadow-lg" /></div>
+      <div><input type="password" id="senha" placeholder="Senha" autofocus="true" class="shadow-lg" /></div>
+      <div id="keep-logged-in" class="flex place-content-center">
+        <input type="checkbox" id="checkbox-keep-logged">Mantenha-me logado
+      </div>
+      <a href="homepage.html">
+        <div class="btn-blue">
+          <button type="button" id="btn-login">Entrar</button>
         </div>
-        <div><input type="email" id="email" placeholder="Usuário" autofocus="true"/></div>
-        <div><input type="password" id="senha" placeholder="Senha" autofocus="true"/></div>        
-        <div id="keep-logged-in" class="flex place-content-center">
-          <input type="checkbox">Mantenha-me logado
-        </div>
-        <div id="btn-login" onclick="">
-          Entrar
-        </div>
-      </form>
-    </div>
+      </a>
+    </form>
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>

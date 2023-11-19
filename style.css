@@ -3,6 +3,10 @@
     src: url(assets/fonts/HammersmithOne-Regular.ttf);
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .page {
     display: flex;
     flex-direction: column;
@@ -16,7 +20,7 @@
 }
 
 .logo-mindplus {
-    width: 50%;
+    max-width: 50%;
     margin: 30px;
 }
 
@@ -35,6 +39,7 @@
     font-size: 14px;
     color: #666;
     margin-bottom: 25px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .formLogin input {
@@ -65,7 +70,7 @@
     color: #f72585;
 }
 
-#btn-login{
+.btn-blue{
     height: 40px;
     background-color: rgba(0, 74, 173, 0.80);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -76,11 +81,18 @@
     text-align: center;
     font-size: 16px;
     font-weight: 400;
+}
+
+#btn-login {
+    width: 300px;
+    height: 30px;
+    margin-top: -20px;
     cursor: pointer;
 }
 
 #keep-logged-in {
     font-family: Hammersmith-One;
+    font-size: 15px;
     color: rgba(0, 0, 0, 0.70);
     align-items: center;
     text-align: center;
@@ -93,3 +105,30 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+.container{
+    display: flex;
+}
+
+.header-logo{
+    height: 50px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#logo{
+    height: 100px;
+}
+
+header {
+    height: 104px;
+    background-color:  rgba(0, 74, 173, 0.80);
+ }
+
+ 
+ 
+.header-itens li{
+    display: flex;
+    width: 2px;
+}
+ 

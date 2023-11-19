@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML com Tailwind CSS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.5/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-    <header class="">
-
-    </header>
+<body class="bg-gray-200 font-sans">
+  <header class="flex items-center justify-between p-4 bg-blue-500 text-white">
+    <div class="flex items-center">
+      <div class="header-logo mr-4">
+        <img id="logo" src="./assets/images/logo.png" alt="Logo" />            
+      </div>
+      <div class="flex space-x-4">
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 1</button>
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 2</button>
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 3</button>
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 4</button>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
+1x'
