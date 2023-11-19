@@ -3,6 +3,10 @@
     src: url(assets/fonts/HammersmithOne-Regular.ttf);
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .page {
     display: flex;
     flex-direction: column;
@@ -120,4 +124,3 @@ header {
     width: 2px;
 }
  
-

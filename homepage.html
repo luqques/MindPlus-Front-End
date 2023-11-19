@@ -1,45 +1,27 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>HTML com Tailwind CSS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.5/dist/tailwind.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
 </head>
-<body>
-    <header>
-        
-        <div class="header-logo">
-            <img id="logo" src="./assets/images/logo.png" alt="Logo steam" />
-            
-        </div>
-        <div class="header-itens">
-            <!-- <ul>
-                <li>  
-                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="w-4 h-4">
-                        <path fill-rule="evenodd" d="M3 2.25a.75.75 0 000 1.5v16.5h-.75a.75.75 0 000 1.5H15v-18a.75.75 0 000-1.5H3zM6.75 19.5v-2.25a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v2.25a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 010 1.5h-.75A.75.75 0 016 6.75zM6.75 9a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM6 12.75a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 6a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 3.75A.75.75 0 0110.5 9h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 12a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM16.5 6.75v15h5.25a.75.75 0 000-1.5H21v-12a.75.75 0 000-1.5h-4.5zm1.5 4.5a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008zm.75 2.25a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75v-.008a.75.75 0 00-.75-.75h-.008zM18 17.25a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd" />
-                      </svg></li>
-            </ul> -->
-            <div class="h-5 grid grid-cols-3 gap-0 justify-items-center  ...">
-            <ul>
-              <li>01</li>
-              <li>01</li>
-              <li>01</li>
-            </ul>
-            </div>
-        </div>
-    </header>
+<body class="bg-gray-200 font-sans">
+  <header class="flex items-center justify-between p-4 bg-blue-500 text-white">
+    <div class="flex items-center">
+      <div class="header-logo mr-4">
+        <img id="logo" src="./assets/images/logo.png" alt="Logo" />            
+      </div>
+      <div class="flex space-x-4">
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 1</button>
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 2</button>
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 3</button>
+        <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-blue-200">Botão 4</button>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
+1x'
