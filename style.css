@@ -101,3 +101,31 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+.container{
+    display: flex;
+}
+
+.header-logo{
+    height: 50px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#logo{
+    height: 100px;
+}
+
+header {
+    height: 104px;
+    background-color:  rgba(0, 74, 173, 0.80);
+ }
+
+ 
+ 
+.header-itens li{
+    display: flex;
+    width: 2px;
+}
+ 
+
