@@ -1,0 +1,89 @@
+.my-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(77, 77, 220);
+}
+
+.header-logo,
+.header-items,
+.header-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.header-logo h6 {
+  color: white;
+}
+
+.header-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-items {
+  width: 75%;
+}
+
+.header-button {
+  width: 200px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.consulta-button {
+  margin-left: -30px;
+}
+
+.user-icon {
+  width: 50px;
+  height: 60px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: aliceblue;
+  margin-right: 10px;
+}
+
+@media (min-width: 810px) {
+  .header-user-button {
+    margin-left: 300px !important;
+  }
+
+  .header-logo {
+    width: 200px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 809px) {
+  .header-user-button {
+    margin-left: 100px !important;
+  }
+
+  .header-logo {
+    width: 100px;
+    padding-left: 10px;
+  }
+ }
+
+@media (max-width: 500px) {
+    .header-user-button {
+      margin-left: 10px !important;
+    }
+  
+    .header-logo {
+      width: 100px;
+      padding-left: 10px;
+    }
+  
+    .logo-text {
+      display: none;
+    }
+  }
+  
