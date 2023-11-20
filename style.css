@@ -36,6 +36,19 @@
     background-color: rgba(163, 228, 233, 0.51);
 }
 
+@media (max-width: 768px) {
+    .formLogin {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        padding: 20px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+        gap: 5px;
+        background-color: rgba(163, 228, 233, 0.51);
+    }
+}
+
 .formLogin p {
     display: inline-block;
     font-size: 14px;
