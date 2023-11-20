@@ -93,3 +93,44 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+/* - - -  ADMIN  - - - */
+
+.my-header{
+    background-color: #004AADCC;
+}
+
+.my-header img{
+    height: auto;
+    width: 50%;
+    margin-bottom: -15px;
+}
+
+.btn-menu {
+    display: inline-block;
+    padding: 50px 16px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+    background-color: #276bc4cc;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  .btn-menu:hover {
+    background-color: #04306861;
+  }
+
+/*  LD PAGE   */
+
+
+/*  BUSINESS   */
+
+
+
+
+/*  EMPLOYEES   */
+
+
+
+/*  EVENTS   */
