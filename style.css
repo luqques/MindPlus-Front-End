@@ -93,3 +93,36 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+
+/* TELA ADMIN */
+
+.adm-header{
+    background-color: #004AADCC;
+}
+
+.adm-header img{
+    height:auto;
+    width:105px;
+}
+
+.adm-header a{
+    display: inline-block;
+    padding: 60px 16px;
+    margin-top: -80px;
+    margin-bottom: -77px;
+    background-color: #3170c3cc;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    
+}
+
+  .adm-header a:hover {
+    background-color: #04306861;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
