@@ -96,11 +96,11 @@
 
 /* - - -  ADMIN  - - - */
 
-.my-header {
+.adm-header {
     background-color: #004AADCC;
 }
 
-.my-header img {
+.adm-header img {
     height: auto;
     width: 50%;
     margin-bottom: -15px;
@@ -144,36 +144,67 @@
     margin-bottom: -15px;
 }
 
+
+
+
+.intro{
+    background-color: #c2eff1;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+
+
+
+
 .cards {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+
   }
   
-  .card {
-    width: 200px;
+  .card { 
+    position: relative;
+    width: 460px; /* Largura total do card */
     height: 150px;
-    background-color: lightblue;
+    background-color: #cbebeb;;
     text-align: center;
     padding: 20px;
+    padding-top: 5%; /* talvez aqui seja util para aumentar o tamanho mais tarde */
+    padding-bottom: 200px; /* Define tamanho do card inf/sup na parte de baixo */
     margin: 10px;
-    position: relative;
     overflow: hidden;
+    transition: height 0.3s ease;
+    border-bottom-left-radius: 5dvh;
+    border-top-right-radius: 5dvh;
+ 
+  }
+  
+  .card:hover {
+    height: 250px; /* Tamanho/altura da exibição do card inferior */
   }
   
   .description {
     position: absolute;
-    bottom: -150px;
+    top: 96%; /* Ajuste do topo do bloco de descrição, nessa % permite aparecer a bordinha inferior do card */
+    bottom: 0%;
     left: 0;
     width: 100%;
-    background-color: blue;
+    padding: 15px;
+    transition: top 0.3s ease;
+    background-color: #276bc4cc;
     color: white;
-    padding: 10px;
-    transition: bottom 0.3s ease;
+   
   }
   
   .card:hover .description {
-    bottom: 0;
+    top: 50%; /* Ajuste para mostrar a descrição abaixo do card */
   }
 
 /*  EVENTS   */

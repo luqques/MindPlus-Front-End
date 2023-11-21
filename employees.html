@@ -22,11 +22,11 @@
 </head>
 
 <body>
-  <header class="my-header py-4">
+  <header class="adm-header py-4">
     <div class="container mx-auto flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center">
-        <img src="logo.png" alt="" class="h-8">
+        <button><img src="/assets/images/logo.png" alt="" class="h-8"></button>
       </div>
 
       <!-- Botões -->
@@ -40,27 +40,33 @@
       </nav>
     </div>
   </header>
-  
+
+  <div class="intro">
+    <div class="text-4xl font-semibold text-black">Olá [Admin]!</div>
+    <div class="text-2xl text-black">Selecione uma opção</div>
+  </div>
+
   <div class="cards">
-    <div class="card">
-      <h3>ESTATÍSTICAS</h3>
+    <div class="card 1">
+      <a href="#tabs" class="button"><h3>ESTATÍSTICAS</h3></a>
       <div class="description">
         <p>Informações estatísticas detalhadas.</p>
       </div>
     </div>
-    <div class="card">
-      <h3>METAS</h3>
+    <div class="card 2">
+      <a href="#tabs" class="button"><h3>METAS</h3></a>
       <div class="description">
         <p>Metas a serem alcançadas.</p>
       </div>
     </div>
-    <div class="card">
-      <h3>MEUS COLABORADORES</h3>
+    <div class="card 3">
+      <a href="#tabs" class="button"><h3>MEUS COLABORADORES</h3></a>
       <div class="description">
         <p>Informações sobre os colaboradores da equipe.</p>
       </div>
     </div>
   </div>
+
 
 
 
