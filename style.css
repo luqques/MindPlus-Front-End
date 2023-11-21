@@ -65,7 +65,7 @@
     color: #f72585;
 }
 
-#btn-login{
+#btn-login {
     height: 40px;
     background-color: rgba(0, 74, 173, 0.80);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -94,35 +94,93 @@
     cursor: pointer;
 }
 
+/* - - -  ADMIN  - - - */
 
-/* TELA ADMIN */
-
-.adm-header{
+.my-header {
     background-color: #004AADCC;
 }
 
-.adm-header img{
-    height:auto;
-    width:105px;
+.my-header img {
+    height: auto;
+    width: 50%;
+    margin-bottom: -15px;
 }
 
-.adm-header a{
+.btn-menu {
     display: inline-block;
-    padding: 60px 16px;
-    margin-top: -80px;
-    margin-bottom: -77px;
-    background-color: #3170c3cc;
+    padding: 50px 16px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+    background-color: #276bc4cc;
     color: #ffffff;
     transition: background-color 0.3s ease;
-    
+
 }
 
-  .adm-header a:hover {
+.btn-menu:hover {
     background-color: #04306861;
+}
+
+/*  LD PAGE   */
+
+
+
+/*  BUSINESS   */
+
+#bsn-btn {
+    background-color: #04306861;
+    padding: 15px 0px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+
+/*  EMPLOYEES   */
+
+#emp-btn {
+    background-color: #04306861;
+    padding: 15px 0px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .description {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+  }
+  
+  .card:hover .description {
+    bottom: 0;
   }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*  EVENTS   */
+
+#evn-btn {
+    background-color: #04306861;
+    padding: 15px 0px;
+    margin-top: -20px;
+    margin-bottom: -15px;
 }

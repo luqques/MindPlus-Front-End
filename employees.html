@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="my-header py-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="logo.png" alt="" class="h-8">
+      </div>
+
+      <!-- Botões -->
+      <nav class="flex justify-center">
+        <a href="business.html" class="btn-menu">Empresa</a>
+        <div id="emp-btn">
+          <a href="employees.html" class="btn-menu">Colaboradores</a>
+        </div>
+        <a href="events.html" class="btn-menu">Eventos</a>
+
+      </nav>
+    </div>
+  </header>
+  
+  <div class="cards">
+    <div class="card">
+      <h3>ESTATÍSTICAS</h3>
+      <div class="description">
+        <p>Informações estatísticas detalhadas.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>METAS</h3>
+      <div class="description">
+        <p>Metas a serem alcançadas.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>MEUS COLABORADORES</h3>
+      <div class="description">
+        <p>Informações sobre os colaboradores da equipe.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
