@@ -1,0 +1,168 @@
+.my-header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(77, 77, 220);
+  }
+  
+  .header-logo,
+  .header-items,
+  .header-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .header-logo h6 {
+    color: white;
+  }
+  
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header-items {
+    width: 75%;
+  }
+  
+  .header-button {
+    width: 200px;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
+  .consulta-button {
+    margin-left: -30px;
+  }
+  
+  .user-icon {
+    width: 50px;
+    height: 60px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: aliceblue;
+    margin-right: 10px;
+  }
+  
+  @media (min-width: 810px) {
+    .header-user-button {
+      margin-left: 300px !important;
+    }
+  
+    .header-logo {
+      width: 200px;
+      padding-left: 30px;
+    }
+  }
+  
+  @media (max-width: 809px) {
+    .header-user-button {
+      margin-left: 100px !important;
+    }
+  
+    .header-logo {
+      width: 100px;
+      padding-left: 10px;
+    }
+   }
+  
+  @media (max-width: 500px) {
+      .header-user-button {
+        margin-left: 10px !important;
+      }
+    
+      .header-logo {
+        width: 100px;
+        padding-left: 10px;
+      }
+    
+      .logo-text {
+        display: none;
+      }
+    }
+    
+ 
+
+
+ body {
+    margin: 0;
+    padding: 0;
+  }
+
+ .frase {
+    background-image: url('img/sky.jfif');
+    width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .quadrado {
+    width: 700px;
+    height: 350px;
+    background-color: #004AAD;
+    z-index: 2;
+    color: white;
+    font-size: 1.50rem; 
+    line-height: 1.79rem; 
+    text-align: center;
+    padding: 100px;
+ }
+
+ .quadrado img {
+    width: 20px;
+    z-index: 3;
+    display: flex;
+ }
+
+ .card {
+    border-color: #004AAD;
+    border-radius: 4px;
+    
+ }
+
+.banner2 {
+    display: flex;
+    background-color: #004AAD;
+}
+
+/* container3 {
+    width: 100vw;
+    border-radius: 4px;
+    
+} */
+
+.abc {
+
+    height: 500px;
+    background-image: url('img/6.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.abc h1 {
+    
+    padding-left: 90px;
+    text-align: left;
+}
+
+.lista1 {
+    list-style-type: disc;
+}
+
+
+
+
+
+ 
+ 
+
