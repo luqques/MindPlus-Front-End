@@ -1,41 +1,46 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empresa</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
-<body> 
+
+<body>
     <header class="my-header py-4">
         <div class="container mx-auto flex items-center justify-between">
-          <!-- Logo -->
+            <!-- Logo -->
             <div class="flex items-center">
                 <img src="logo.png" alt="" class="h-8">
             </div>
-      
-          <!-- Botões -->
+
+            <!-- Botões -->
             <nav class="flex justify-center">
-                <a href="#" class="btn-menu">Empresa</a>
-                <a href="#" class="btn-menu">Colaboradores</a>
-                <a href="#" class="btn-menu">Eventos</a>
+                <div id="bsn-btn">
+                    <a href="business.html" class="btn-menu">Empresa</a>
+                </div>
+                <a href="employees.html" class="btn-menu">Colaboradores</a>
+                <a href="events.html" class="btn-menu">Eventos</a>
             </nav>
         </div>
     </header>
-      
-  
+
+
 </body>
+
 </html>
