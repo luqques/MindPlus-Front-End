@@ -94,7 +94,7 @@
     cursor: pointer;
 }
 
-/* - - -  ADMIN  - - - */
+/* - O - O - O - ADMIN HEADER - O - O - O - */
 
 .adm-header {
     background-color: #004AADCC;
@@ -102,8 +102,8 @@
 
 .adm-header img {
     height: auto;
-    width: 50%;
-    margin-bottom: -15px;
+    width: 130px;
+    margin-bottom: -56px;
 }
 
 .btn-menu {
@@ -121,11 +121,11 @@
     background-color: #04306861;
 }
 
-/*  LD PAGE   */
+/* - - - LD PAGE - - - */
 
 
 
-/*  BUSINESS   */
+/* - - - BUSINESS - - - */
 
 #bsn-btn {
     background-color: #04306861;
@@ -135,7 +135,10 @@
 }
 
 
-/*  EMPLOYEES   */
+/* - - - EMPLOYEES - - - */
+
+
+/* header btn e intro */
 
 #emp-btn {
     background-color: #04306861;
@@ -144,55 +147,52 @@
     margin-bottom: -15px;
 }
 
-
-
-
 .intro{
     background-color: #c2eff1;
     padding-top: 20px;
     padding-left: 25px;
     padding-bottom: 20px;
     margin-top: 50px;
-
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-
-
+/* cards */
 
 .cards {
     display: flex;
     justify-content: space-around;
     margin-top: 90px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 
   }
   
   .card { 
     position: relative;
-    width: 460px; /* Largura total do card */
+    width: 550px; /* Largura total do card */
     height: 150px;
-    background-color: #cbebeb;;
+    background-color: #cbebeb;
     text-align: center;
     padding: 20px;
     padding-top: 5%; /* talvez aqui seja util para aumentar o tamanho mais tarde */
     padding-bottom: 200px; /* Define tamanho do card inf/sup na parte de baixo */
     margin: 10px;
     overflow: hidden;
-    transition: height 0.3s ease;
+    transition: top 0.3s ease;
     border-bottom-left-radius: 5dvh;
     border-top-right-radius: 5dvh;
- 
+    font-size: 22px; /* ---- Adicionar específico para descrição ----*/
   }
   
   .card:hover {
-    height: 250px; /* Tamanho/altura da exibição do card inferior */
+    height: 400px; /* Tamanho/altura da transição do card inferior */
+    transition: 0.5s;
   }
   
   .description {
     position: absolute;
-    top: 96%; /* Ajuste do topo do bloco de descrição, nessa % permite aparecer a bordinha inferior do card */
+    top: 97%; /* Ajuste do topo do bloco de descrição, nessa % permite aparecer a bordinha inferior do card */
     bottom: 0%;
     left: 0;
     width: 100%;
@@ -204,10 +204,21 @@
   }
   
   .card:hover .description {
-    top: 50%; /* Ajuste para mostrar a descrição abaixo do card */
+    top: 42%; /* Ajuste para mostrar a descrição abaixo do card */
   }
 
-/*  EVENTS   */
+.card i {
+
+    font-size: 80px;
+    padding-top: 54px;
+    color: #276bc4cc;
+}
+
+
+
+
+
+/* - - - EVENTS - - - */
 
 #evn-btn {
     background-color: #04306861;
