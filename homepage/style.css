@@ -147,6 +147,7 @@
     background-image: url('img/6.png'); 
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .abc h1 {
@@ -157,6 +158,25 @@
 
 .lista1 {
     list-style-type: disc;
+}
+
+.cards3 {
+  width: 250px;
+  margin-left: 60px;
+  border-radius: 20px;
+  
+  
+}
+
+.cards3 :hover {
+  opacity: 0.2;
+  
+
+}
+
+.banner4 {
+  display: flex;
+  margin-top: 10px;
 }
 
 
