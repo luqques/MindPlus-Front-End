@@ -83,4 +83,47 @@
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+  .menu-lateral-ativo {
+    display: block !important;
+  }
+
+  #menu-lateral {
+    position: fixed;
+    text-align: right;
+    width: 250px;
+    height: 100%;
+    padding-top: 60px;
+    /* margin-left: 50%; */
+    z-index: 2;
+    background-color: grey;
+    overflow-x: hidden;
+    display: none;
+    transition: 1s;
+    font-family: Hammersmith-One;
+    top: 0;
+    left: 0;
+  }
+
+  #menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #menu-lateral ul li {
+    padding: 15px;
+    text-align: center;
+  }
+
+  #menu-lateral ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #sidebar ul li a:hover {
+    color: #f1f1f1;
+  }
+
 }
