@@ -54,6 +54,8 @@
     height: 40px;
   }
 
+  .menu-lateral-options,
+  .btn-close-menu-lateral,
   .menu-list {
     visibility: hidden;
   }
@@ -88,15 +90,19 @@
     display: block !important;
   }
 
+  .menu-lateral-options,
+  .btn-close-menu-lateral {
+    visibility: visible;
+  }
+
   #menu-lateral {
     position: fixed;
     text-align: right;
     width: 250px;
     height: 100%;
     padding-top: 60px;
-    /* margin-left: 50%; */
     z-index: 2;
-    background-color: grey;
+    background-color: rgb(55, 55, 179);
     overflow-x: hidden;
     display: none;
     transition: 1s;
@@ -115,6 +121,14 @@
     text-align: center;
   }
 
+  #menu-lateral ul li:hover {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(56, 107, 248);
+    transition: 1s;
+    cursor: pointer;
+  }
+
   #menu-lateral ul li a {
     text-decoration: none;
     color: white;
@@ -122,8 +136,19 @@
     transition: 0.3s;
   }
 
-  #sidebar ul li a:hover {
-    color: #f1f1f1;
+  #close-menu-lateral {
+    color: white;
+    font-family: Hammersmith-One;
+    padding: 30px;
+    cursor: pointer;
   }
 
+  #close-menu-lateral:hover {
+    color: white;
+    font-family: Hammersmith-One;
+    padding: 30px;
+    cursor: pointer;
+    background-color: rgb(56, 107, 248);
+    transition: 1s;
+  }
 }

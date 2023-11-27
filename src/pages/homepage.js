@@ -1,14 +1,19 @@
-let openModal = document.querySelectorAll("#open-modal");
-for (let open of openModal) {
-  open.addEventListener(`click`, showModal);
+let openMenuLateral = document.querySelectorAll("#open-modal");
+for (let open of openMenuLateral) {
+  open.addEventListener(`click`, showMenuLateral);
 }
 
-function showModal() {
-  let modal = document.querySelector("#menu-lateral");
-  modal.classList.add(`menu-lateral-ativo`);
+function showMenuLateral() {
+  let menuLateral = document.querySelector("#menu-lateral");
+  menuLateral.classList.add(`menu-lateral-ativo`);
 }
 
-function closeModal() {
-  let modal = document.querySelector("#menu-lateral");
-  modal.classList.remove(`menu-lateral-ativo`);
+let closeMenuLateral = document.querySelectorAll("#close-menu-lateral");
+for (let close of closeMenuLateral) {
+  close.addEventListener(`click`, hideMenuLateral)
+}
+
+function hideMenuLateral() {
+  let menuLateral = document.querySelector("#menu-lateral");
+  menuLateral.classList.remove(`menu-lateral-ativo`);
 }
