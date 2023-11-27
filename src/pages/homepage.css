@@ -73,7 +73,7 @@
   }
 
   .menu-list,
-  #open-modal {
+  #open-menu-lateral {
     font-size: 30px;
     margin-top: 35px;
     margin-left: 80%;
@@ -91,7 +91,7 @@
   }
 
   .menu-lateral-options,
-  .btn-close-menu-lateral {
+  #btn-close-menu-lateral {
     visibility: visible;
   }
 
@@ -100,29 +100,22 @@
     text-align: right;
     width: 250px;
     height: 100%;
-    padding-top: 60px;
+    padding-top: 100px;
     z-index: 2;
     background-color: rgb(55, 55, 179);
-    overflow-x: hidden;
     display: none;
     transition: 1s;
     font-family: Hammersmith-One;
-    top: 0;
-    left: 0;
-  }
-
-  #menu-lateral ul {
-    list-style-type: none;
-    padding: 0;
   }
 
   #menu-lateral ul li {
-    padding: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
   #menu-lateral ul li:hover {
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     background-color: rgb(56, 107, 248);
     transition: 1s;
@@ -141,6 +134,7 @@
     font-family: Hammersmith-One;
     padding: 30px;
     cursor: pointer;
+    position: absolute;
   }
 
   #close-menu-lateral:hover {
@@ -148,7 +142,12 @@
     font-family: Hammersmith-One;
     padding: 30px;
     cursor: pointer;
+    position: absolute;
     background-color: rgb(56, 107, 248);
     transition: 1s;
+  }
+
+  #btn-close-menu-lateral {
+    width: 250px;
   }
 }

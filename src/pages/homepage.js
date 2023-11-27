@@ -1,4 +1,4 @@
-let openMenuLateral = document.querySelectorAll("#open-modal");
+let openMenuLateral = document.querySelectorAll("#open-menu-lateral");
 for (let open of openMenuLateral) {
   open.addEventListener(`click`, showMenuLateral);
 }
