@@ -1,7 +1,7 @@
 @media (max-width: 2560px) {
   .my-header {
     height: 100px;
-    width: auto;
+    width: 100%;
     display: flex;
     background-color: rgb(77, 77, 220);
     font-family: Hammersmith-One;
@@ -16,8 +16,7 @@
   }
 
   .logo img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
   }
 
   .header-items {
@@ -36,6 +35,7 @@
     align-items: center;
     cursor: pointer;
     margin-left: 10%;
+    font-family: Hammersmith-One;
   }
 
   .header-items img {
@@ -50,8 +50,7 @@
   }
 
   .user-icon img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
   }
 
   .menu-lateral-options,
@@ -59,6 +58,94 @@
   .menu-list {
     visibility: hidden;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+ .frase {
+    background-image: url('img/sky.jfif');
+    width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .quadrado {
+    width: 700px;
+    height: 350px;
+    background-color: #004AAD;
+    z-index: 2;
+    color: white;
+    font-size: 1.50rem; 
+    line-height: 1.79rem; 
+    text-align: center;
+    padding: 100px;
+ }
+
+ .quadrado img {
+    width: 20px;
+    z-index: 3;
+    display: flex;
+ }
+
+ .card {
+    border-color: #004AAD;
+    border-radius: 4px;    
+ }
+
+.banner2 {
+    display: flex;
+    background-color: #004AAD;
+}
+
+/* container3 {
+    width: 100vw;
+    border-radius: 4px;
+    
+} */
+
+.abc {
+
+    height: 500px;
+    background-image: url('img/6.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.abc h1 {
+    
+    padding-left: 90px;
+    text-align: left;
+}
+
+.lista1 {
+    list-style-type: disc;
+}
+
+.cards3 {
+  width: 250px;
+  margin-left: 60px;
+  border-radius: 20px;
+  
+  
+}
+
+.cards3 :hover {
+  opacity: 0.2;
+  
+
+}
+
+.banner4 {
+  display: flex;
+  margin-top: 10px;
+}
 }
 
 @media (max-width: 768px) {
