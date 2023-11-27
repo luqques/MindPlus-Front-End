@@ -55,7 +55,7 @@
   }
 
   .menu-lateral-options,
-  .btn-close-menu-lateral,
+  #btn-close-menu-lateral,
   .menu-list {
     visibility: hidden;
   }
@@ -129,25 +129,25 @@
     transition: 0.3s;
   }
 
-  #close-menu-lateral {
+  #btn-close-menu-lateral {
     color: white;
     font-family: Hammersmith-One;
     padding: 30px;
+    margin-top: 200px;
+    width: 190px;
     cursor: pointer;
     position: absolute;
   }
 
-  #close-menu-lateral:hover {
+  #btn-close-menu-lateral:hover {
     color: white;
     font-family: Hammersmith-One;
+    margin-top: 200px;
     padding: 30px;
+    width: 190px;
     cursor: pointer;
     position: absolute;
     background-color: rgb(56, 107, 248);
     transition: 1s;
-  }
-
-  #btn-close-menu-lateral {
-    width: 250px;
   }
 }
