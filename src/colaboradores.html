@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus Colaboradores</title>
+  <title>Colaboradores</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="reset.css">
   <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -22,6 +22,9 @@
     }
   </script>
 </head>
+
+
+<!-- Header -->
 
 <body>
   <header class="my-header">
@@ -54,67 +57,50 @@
 
   <!-- Introdução -->
 
-  <div class="intro mt-5 py-3 px-10">
-    <div class="text-2xl font-semibold text-black">Editar informações sobre os <b>Colaboradores</b></div>
+  <div class="intro">
+    <div class="text-5xl font-semibold text-black">Olá [Admin]!</div>
+    <div class="text-2xl text-black pt-4">Selecione uma opção</div>
   </div>
 
+  <!-- Cards -->
 
-  <!-- Adicionar Colaborador -->
+  <div class="cards">
 
-  <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">ADICIONAR Colaborador
-  </button>
+    <div class="card">
+      <h3>ESTATÍSTICAS</h3>
+      <i class="fa-solid fa-chart-pie" :></i>
+      <div class="description">
+        <p>Informações estatísticas detalhadas.</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded mt-10">
+          Ver Gráficos
+        </button>
+      </div>
+    </div>
 
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
+    <!-- >>>Falta linkar botões com páginas - fazer com JS -->
+    <div class="card">
+      <h3>METAS</h3>
+      <i class="fa-solid fa-bullseye"></i>
+      <div class="description">
+        <p>Metas a serem alcançadas.</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded mt-10">
+          Ver Metas
+        </button>
+      </div>
+    </div>
 
-    <h2>Adicionar Colaborador do Mind+</h2>
-    <p>[FORM Adição de Colaboradores]</p>
-  </div>
-
-
-  <!-- Alterar Colaborador -->
-
-  <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">ALTERAR Colaborador
-  </button>
-
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
-
-    <h2>Editar Colaborador do Mind+</h2>
-    <p>[FORM Edição de Colaboradores]</p>
-  </div>
-
-
-  <!-- Remover Colaborador -->
-
-  <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">REMOVER Colaborador
-  </button>
-
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
-
-    <h2>Remover Colaborador do Mind+</h2>
-    <p>[FORM Remoção de Colaboradores]</p>
-  </div>
-
-
-  <!-- Visualizar Colaboradores -->
-
-  <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">VER Colaboradores
-  </button>
-
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
-
-    <h2>Visualizar Colaboradores cadastrados no Mind+</h2>
-    <p>[FORM Visualização de Colaboradores]</p>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="index.js"></script>
+    <div class="card">
+      <h3>MEUS COLABORADORES</h3>
+      <i class="fa-solid fa-users-gear"></i>
+      <div class="description">
+        <p>Informações sobre os colaboradores da equipe.</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded mt-10">
+          Editar Colaboradores
+        </button>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
-
 </html>

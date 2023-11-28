@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="reset.css">
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><!--- Conteúdo da Google Charts -->
   <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -22,6 +24,9 @@
     }
   </script>
 </head>
+
+
+<!-- Header -->
 
 <body>
   <header class="my-header">
@@ -51,62 +56,71 @@
       </div>
     </div>
   </header>
+
+  <!-- Introdução -->
+
+  <div class="intro mt-5 py-3 px-10">
+    <div class="text-2xl font-bold text-black">Estatísticas</div>
+    <div class="text- font-semibold text-black">Selecione a visualização de dados desejada</b></div>
+  </div>
+
+
+  <!-- Select dos Gráficos -->
+  <!-- G1 - Formulário -->
+
+  <label for="forms-adm" class="block ml-[15%] mb-2 mt-6 font-medium text-black">Formulários dos Colaboradores</label> <!--Título G1 -->
+ 
+  <select id="forms-adm" onchange="showGraph()"
+    class="text-black text-sm border rounded-lg block w-[70%] ml-[15%] p-2.5 bg-[#c2eff1] border-gray-600"
+    data-toggle="modal"> <!--Estilo do Select G1-->
+    <option selected>Escolha um Formulário</option>
+    <option value="FT">Formulário de Satisfação no Trabalho</option>
+    <option value="FP">Formulário de Satisfação Pessoal</option>
+    <option value="FE">Formulário de Identificação de Fatores de Estresse</option>
+    <option value="FA">Formulário de Autocuidado</option>
+    <option value="SG">Satisfação Geral dos Colaboradores</option>
+  </select>
+
+  <!-- G2 - Outros gráficos -->
+
+  <label for="select-adm" class="block ml-[15%] mb-2 mt-8 font-medium text-black ">Gráficos e outras informações</label> <!--Título G2 -->
   
-    <!-- Introdução -->
+  <select id="select-adm" onchange="showGraph()"
+    class="text-black text-sm border rounded-lg block w-[70%] ml-[15%] p-2.5 bg-[#c2eff1] border-gray-600"
+    data-toggle="modal"> <!--Estilo do Select G2-->
+    <option selected>Escolha um Gráfico</option>
+    <option value="DF">Distribuição de Respostas por Formulário</option>
+    <option value="DS">Distribuição de Respostas por Setor</option>
+    <option value="NE">Níveis de Estresse</option>
+    <option value="TT">Tendências Temporais</option>
+    <option value="VPP">Equilíbrio de Vida Pessoal/Profissional</option>
+    <option value="CR">Correlações</option>
+    <option value="FB">Feedback</option> <!-- Qualitativo. Será distribuido e visto aleatóriamente, sem identificação -->
+  </select>
+
+
+  <!-- Modal -->
+
+  <div class="modal-overlay" id="overlayFA" onclick="closeModal('modalFA','overlayFA')"></div> <!-- [Adicionar um "clique fora da tela para sair"]-->
   
-    <div class="intro mt-5 py-3 px-10">
-      <div class="text-2xl font-bold text-black">Estatísticas</div>
-      <div class="text- font-semibold text-black">Selecione a visualização de dados desejada</b></div>
-    </div>
+  <!-- Modal Formulário de Autocuidado-->
+  <div class="modal" id="modalFA">
+    <!--FA-->
+    <div id="FA" style="width: 900px; height: 500px;"></div>
+  </div>
+
+  <div class="modal-overlay" id="overlaySG" onclick="closeModal('modalSG','overlaySG')"></div>
   
-  
-    <!-- Select dos Gráficos -->
-    <!-- G1 - Formulário -->
-  
-    <label for="forms-adm" class="block ml-[15%] mb-2 mt-6 font-medium text-black">Formulários dos Colaboradores</label> <!--Título G1 -->
-    <select id="forms-adm" onchange="showGraph()" class="text-black text-sm border rounded-lg block w-[70%] ml-[15%] p-2.5 bg-[#c2eff1] border-gray-600" data-toggle="modal"> <!--Estilo do Select G1-->
-      <option selected>Escolha um Formulário</option>
-      <option value="FT">Formulário de Satisfação no Trabalho</option>
-      <option value="FP">Formulário de Satisfação Pessoal</option>
-      <option value="FE">Formulário de Identificação de Fatores de Estresse</option>
-      <option value="FA">Formulário de Autocuidado</option>
-      <option value="SG">Satisfação Geral dos Colaboradores</option>
-    </select>
-  
-     <!-- G2 - Outros gráficos -->
-  
-    <label for="select-adm" class="block ml-[15%] mb-2 mt-8 font-medium text-black ">Gráficos e outras informações</label> <!--Título G2 -->
-    <select id="select-adm" onchange="showGraph()" class="text-black text-sm border rounded-lg block w-[70%] ml-[15%] p-2.5 bg-[#c2eff1] border-gray-600" data-toggle="modal">  <!--Estilo do Select G2-->
-      <option selected>Escolha um Gráfico</option>
-      <option value="DF">Distribuição de Respostas por Formulário</option>
-      <option value="DS">Distribuição de Respostas por Setor</option>
-      <option value="NE">Níveis de Estresse</option>
-      <option value="TT">Tendências Temporais</option>
-      <option value="VPP">Equilíbrio de Vida Pessoal/Profissional</option>
-      <option value="CR">Correlações</option>
-      <option value="FB">Feedback</option> <!-- Qualitativo. Será distribuido e visto aleatóriamente, sem identificação -->
-    </select>
-  
-  
-    <!-- Modal -->
-  
-    <div class="modal-overlay" id="overlayFA" onclick="closeModal('modalFA','overlayFA')"></div> <!-- [Adicionar um "clique fora da tela para sair"]-->
-    <!-- Modal formulário -->
-    <div class="modal" id="modalFA">
-      <!--FA-->
-      <div id="FA" style="width: 900px; height: 500px;"></div>
-    </div>
-  
-    
-    <div class="modal-overlay" id="overlaySG" onclick="closeModal('modalSG','overlaySG')"></div> <!-- [Adicionar um "clique fora da tela para sair"]-->
-    <!-- Modal formulário -->
-    <div class="modal" id="modalSG">
-      <!--SG-->
-      <div id="SG" style="width: 900px; height: 500px;"></div>
-    </div>
-   
-  
-  
-  
-  </body>
-  </html>
+  <!-- Modal Satisfação Geral -->
+  <div class="modal" id="modalSG">
+    <!--SG-->
+    <div id="SG" style="width: 900px; height: 500px;"></div>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChartStat); </script>
+</body>
+</html>
