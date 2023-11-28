@@ -1,7 +1,10 @@
-//Modal Isa - Meus collab
+
 
 const btnLogin = document.querySelector("#btn-login");
 btnLogin.addEventListener(`click`);
+
+
+//Modal Isa - Meus collab - my-employees
 
 function openModal() {
     let modal = document.getElementById('modal');
@@ -19,10 +22,11 @@ function closeModal() {
     overlay.style.display = 'none';
 }
 
-// Gráfico Isa Metas 1
+
+// Gráfico Isa - Metas - goals
 
 function drawChart() {
-    let data1 = google.visualization.arrayToDataTable([
+    let data1 = google.visualization.arrayToDataTable([ //Gráfico 1
         ['MÊS', 'Nº Preenchimentos', 'Nº Colaboradores'],
         ['Jan', 1740, 1996],
         ['Fev', 1881, 1992],
@@ -38,7 +42,7 @@ function drawChart() {
         ['Dez', 0, 0]
     ]);
 
-    let data2 = google.visualization.arrayToDataTable([
+    let data2 = google.visualization.arrayToDataTable([ //Gráfico 2
         ['ANO', 'Nº Preenchimentos', 'Nº Colaboradores'],
         ['2019', 832, 845],
         ['2020', 798, 860],
@@ -46,14 +50,14 @@ function drawChart() {
         ['2022', 1242, 1800]
     ]);
 
-    let options1 = {
+    let options1 = { // Título Gráfico 2
         chart: {
             title: 'Adesão dos colaboradores por mês (2023).',
             subtitle: 'Nº de Preenchimentos X Nº de Colaboradores. Dados coletados mensalmente.',
         }
     };
 
-    let options2 = {
+    let options2 = { // Título Gráfico 2
         chart: {
             title: 'Adesão dos colaboradores por ano (2019 - 2022).',
             subtitle: 'Nº de Preenchimentos X Nº de Colaboradores anuais. Dados coletados mensalmente: 2019-2022',
@@ -65,7 +69,94 @@ function drawChart() {
 
     chart1.draw(data1, google.charts.Bar.convertOptions(options1));
     chart2.draw(data2, google.charts.Bar.convertOptions(options2));
+
+    // [adicionar outros gráficos junto?]
 }
 
 
-    
+// Modal Isa- Estatísticas - chart
+
+function showGraph() {
+
+    let selectElement1 = document.getElementById('forms-adm');
+    let selectedValue1 = selectElement1.options[selectElement1.selectedIndex].value; //Pega o value(valor) referente a opção escolhida no Gráfico 1 (G1)
+
+    let selectElement2 = document.getElementById('select-adm');
+    let selectedValue2 = selectElement2.options[selectElement2.selectedIndex].value; //Pega o value(valor) referente a opção escolhida Gráfico 2 (G2)
+
+
+    // Lógica para o Gráfico 1 - G1
+
+    if (selectedValue2 === 'FT') {
+        openModal(); // Abre Modal - Formulário de Satisfação no Trabalho
+        // lógica do gráfico a pensar
+
+
+    }
+
+    if (selectedValue1 === 'FP') {
+        openModal(); // Abre Modal - Formulário de Satisfação Pessoal
+    }
+
+    if (selectedValue1 === 'FE') {
+        openModal(); // Abre Modal - Formulário de Identificação de Fatores de Estresse
+    }
+
+    if (selectedValue1 === 'FA') {
+        openModal(); // Abre Modal - Níveis de Estresse 
+    }
+    //[talvez puxar SG Satisfação Geral para G1]
+
+
+    // Lógica para o Gráfico 2 - G2
+
+    if (selectedValue2 === 'SG') {
+        openModal(); // Abre Modal - Satisfação Geral dos Colaboradores
+    }
+
+    if (selectedValue2 === 'DF') {
+        openModal(); // Abre Modal - Distribuição de Respostas por Formulário
+    }
+
+    if (selectedValue2 === 'DS') {
+        openModal(); // Abre Modal - Distribuição de Respostas por Setor
+    }
+
+    if (selectedValue2 === 'NE') {
+        openModal(); // Abre Modal - Níveis de Estresse 
+
+    }
+    if (selectedValue2 === 'TT') {
+        openModal(); // Abre Modal - Tendências Temporais
+    }
+
+    if (selectedValue2 === 'VPP') {
+        openModal(); // Abre Modal - Equilíbrio de Vida Pessoal/Profissional
+    }
+
+    if (selectedValue2 === 'CR') {
+        openModal(); // Abre Modal - Correlações
+    }
+
+    if (selectedValue2 === 'FB') {
+        openModal(); // Abre Modal - Feedback
+    }
+
+
+    function openModal() { // Método que faz o modal ser criado (display block) ao selecionar algum valor
+        let modal = document.getElementById('modal');
+        let overlay = document.querySelector('.modal-overlay');
+
+        modal.style.display = 'block';
+        overlay.style.display = 'block';
+    }
+
+    function closeModal() { // Método que faz o modal ser finalizado (display none) ao querer sair (clicar fora)
+        let modal = document.getElementById('modal');
+        let overlay = document.querySelector('.modal-overlay');
+
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
+    }
+
+}
