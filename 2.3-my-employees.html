@@ -56,11 +56,11 @@
     <!-- Adicionar Colaborador -->
 
     <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-      onclick="openModal()">ADICIONAR Colaborador
+      onclick="openModal('addCol', 'overlayAddCol')">ADICIONAR Colaborador
     </button>
 
-    <div class="modal-overlay" onclick="closeModal()"></div>
-    <div class="modal" id="modal">
+    <div class="modal-overlay" id="overlayAddCol" onclick="closeModal('addCol','overlayAddCol')"></div>
+    <div class="modal" id="addCol">
 
       <h2>Adicionar Colaborador do Mind+</h2>
       <p>[FORM Adição de Colaboradores]</p>
@@ -70,11 +70,11 @@
     <!-- Alterar Colaborador -->
 
     <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-      onclick="openModal()">ALTERAR Colaborador
+      onclick="openModal('editCol', 'overlayEditCol')">ALTERAR Colaborador
     </button>
 
-    <div class="modal-overlay" onclick="closeModal()"></div>
-    <div class="modal" id="modal">
+    <div class="modal-overlay" id="overlayEditCol" onclick="closeModal('editCol','overlayEditCol')"></div>
+    <div class="modal" id="editCol">
 
       <h2>Editar Colaborador do Mind+</h2>
       <p>[FORM Edição de Colaboradores]</p>
@@ -84,11 +84,11 @@
     <!-- Remover Colaborador -->
 
     <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-      onclick="openModal()">REMOVER Colaborador
+      onclick="openModal('delCol','overlayDelCol')">REMOVER Colaborador
     </button>
 
-    <div class="modal-overlay" onclick="closeModal()"></div>
-    <div class="modal" id="modal">
+    <div class="modal-overlay" id="overlayDelCol" onclick="closeModal('delCol','overlayDelCol')"></div>
+    <div class="modal" id="delCol">
 
       <h2>Remover Colaborador do Mind+</h2>
       <p>[FORM Remoção de Colaboradores]</p>
@@ -98,11 +98,11 @@
     <!-- Visualizar Colaboradores -->
 
     <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-      onclick="openModal()">VER Colaboradores
+      onclick="openModal('readCol','overlayReadCol')">VER Colaboradores
     </button>
 
-    <div class="modal-overlay" onclick="closeModal()"></div>
-    <div class="modal" id="modal">
+    <div class="modal-overlay" id="overlayReadCol" onclick="closeModal('readCol','overlayReadCol')"></div>
+    <div class="modal" id="readCol">
 
       <h2>Visualizar Colaboradores cadastrados no Mind+</h2>
       <p>[FORM Visualização de Colaboradores]</p>
