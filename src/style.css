@@ -74,3 +74,49 @@
   background-color: #3372c4;
   transition: 0.5s;
 }
+
+@media (max-width: 768px) {
+
+  .fundo-banner,
+  .banner {
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  .button-card {
+    height: 60px;
+    width: 80%;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    color: white;
+    font-family: Hammersmith-One;
+    font-size: 16px;
+    place-content: center;
+  }
+
+  .button-card:hover {
+    height: 60px;
+    width: 80%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    color: white;
+    font-family: Hammersmith-One;
+    font-size: 16px;
+    place-content: center;
+    background-color: #3372c4;
+    transition: 0.5s;
+  }
+
+  .card h1 {
+    min-height: 65px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .text-card {
+    min-height: 370px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

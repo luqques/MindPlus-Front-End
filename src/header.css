@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (max-width: 2000px) {
     .my-header {
         height: 100px;
         width: 100vw;
@@ -64,15 +64,14 @@
 
     .header-items,
     .user-icon {
-        width: auto;
         visibility: hidden;
     }
 
     .menu-list,
     #open-menu-lateral {
         font-size: 30px;
-        margin-top: 35px;
-        margin-left: 80%;
+        margin-top: 30px;
+        margin-left: 85%;
         position: absolute;
         visibility: visible;
         transform: rotate(90deg);
@@ -97,10 +96,10 @@
         width: 250px;
         height: 100%;
         padding-top: 100px;
-        z-index: 2;
-        background-color: rgb(55, 55, 179);
+        z-index: 5;
+        background-color: rgba(8, 65, 139);
         display: none;
-        transition: 1s;
+        transition: 0.5s;
         font-family: Hammersmith-One;
     }
 
@@ -114,7 +113,7 @@
         padding: 30px;
         text-align: center;
         background-color: rgb(56, 107, 248);
-        transition: 1s;
+        transition: 0.5s;
         cursor: pointer;
     }
 
@@ -129,8 +128,8 @@
         color: white;
         font-family: Hammersmith-One;
         padding: 30px;
-        margin-top: 200px;
-        width: 190px;
+        margin-top: 50px;
+        width: 100%;
         cursor: pointer;
         position: absolute;
     }
@@ -138,9 +137,8 @@
     #btn-close-menu-lateral:hover {
         color: white;
         font-family: Hammersmith-One;
-        margin-top: 200px;
         padding: 30px;
-        width: 190px;
+        width: 100%;
         cursor: pointer;
         position: absolute;
         background-color: rgb(56, 107, 248);
