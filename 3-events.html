@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="adm-header py-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <button><img src="/assets/images/logo.png" alt="" class="h-8"></button>
+      </div>
+
+      <!-- Botões -->
+      <nav class="flex justify-center">
+        <a href="business.html" class="btn-menu">Empresa</a>
+        <a href="employees.html" class="btn-menu">Colaboradores</a>
+        <div id="evn-btn">
+          <a href="events.html" class="btn-menu">Eventos</a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+</body>
+
+</html>
