@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estatísticas</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="reset.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="index.js"></script>
@@ -16,7 +18,6 @@
         extend: {
           colors: {
             clifford: '#da373d',
-           
           }
         }
       }
@@ -25,30 +26,33 @@
 </head>
 
 <body>
-  <header class="adm-header py-3">
-    <div class="container mx-auto flex items-center justify-between">
-
-
-      <!-- Logo -->
-
-      <div class="flex items-center">
-        <button><img src="assets/images/logo.png" alt=""></button>  <!-- A linkar com a página inicial, se existir -->
+  <header class="my-header">
+    <div class="logo">
+      <a href="homepage.html">
+        <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
+      </a>
+    </div>
+    <div id="open-menu-lateral" class="menu-list">|||</div>
+    <ul class="header-items flex justify-around">
+      <li><a href="minha-empresa.html">Minha Empresa</a></li>
+      <li><a href="colaboradores.html">Colaboradores</a></li>
+      <li><a href="metas.html">Metas</a></li>
+    </ul>
+    <div class="user-icon">
+      <img src="../assets/images/user-icon.png" alt="Usuario">
+    </div>
+    <div id="menu-lateral">
+      <ul class="menu-lateral-options">
+        <li><a href="minha-empresa.html">Minha Empresa</a></li>
+        <li><a href="colaboradores.html">Colaboradores</a></li>
+        <li><a href="metas.html">Metas</a></li>
+      </ul>
+      <div id="close-menu-lateral" class="grid flex place-content-end">
+        <p id="btn-close-menu-lateral">
+          << </p>
       </div>
-
-
-      <!-- Botões Header -->
-
-      <nav class="flex justify-center">
-        <a href="business.html" class="btn-menu">Empresa</a>
-        <div id="emp-btn">
-          <a href="employees.html" class="btn-menu">Colaboradores</a>
-        </div>
-        <a href="events.html" class="btn-menu">Eventos</a>
-      </nav>
-      <button><i class="fa-solid fa-circle-user fa-3x" style="color: #ffffff;"></i></button>
     </div>
   </header>
-
 
   <!-- Introdução -->
 
@@ -61,8 +65,11 @@
   <!-- Select dos Gráficos -->
   <!-- G1 - Formulário -->
 
-  <label for="forms-adm" class="block mb-2 text-sm font-medium text-gray-900">Formulários dos Colaboradores</label> <!--Título G1 -->
-  <select id="forms-adm" onchange="showGraph()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" data-toggle="modal"> <!--Estilo do Select G1-->
+  <label for="forms-adm" class="block mb-2 text-sm font-medium text-gray-900">Formulários dos Colaboradores</label>
+  <!--Título G1 -->
+  <select id="forms-adm" onchange="showGraph()"
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+    data-toggle="modal"> <!--Estilo do Select G1-->
     <option selected>Escolha um Formulário</option>
     <option value="FT">Formulário de Satisfação no Trabalho</option>
     <option value="FP">Formulário de Satisfação Pessoal</option>
@@ -70,10 +77,13 @@
     <option value="FA">Formulário de Autocuidado</option>
   </select>
 
-   <!-- G2 - Outros gráficos -->
+  <!-- G2 - Outros gráficos -->
 
-  <label for="select-adm" class="block mb-2 text-sm font-medium text-gray-900 ">Gráficos e outras informações</label> <!--Título G2 -->
-  <select id="select-adm" onchange="showGraph()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" data-toggle="modal">  <!--Estilo do Select G2-->
+  <label for="select-adm" class="block mb-2 text-sm font-medium text-gray-900 ">Gráficos e outras informações</label>
+  <!--Título G2 -->
+  <select id="select-adm" onchange="showGraph()"
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+    data-toggle="modal"> <!--Estilo do Select G2-->
     <option selected>Escolha um Gráfico</option>
     <option value="SG">Satisfação Geral dos Colaboradores</option>
     <option value="DF">Distribuição de Respostas por Formulário</option>
@@ -92,8 +102,9 @@
   <div class="modal" id="modal">
     <!-- Conteúdo do modal (gráficos) -->
     <h1>oi boboca</h1>
-    
+
   </div>
 
 </body>
+
 </html>

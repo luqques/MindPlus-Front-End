@@ -1,9 +1,4 @@
 
-
-const btnLogin = document.querySelector("#btn-login");
-btnLogin.addEventListener(`click`);
-
-
 //Modal Isa - Meus collab - my-employees
 
 function openModal() {

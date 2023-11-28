@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colaboradores</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="reset.css">
   <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,24 +24,32 @@
 </head>
 
 <body>
-  <header class="adm-header py-3">
-    <div class="container mx-auto flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center">
-        <button><img src="assets/images/logo.png" alt=""></button>
-      </div>
-
-      <!-- Botões Header -->
-      <nav class="flex justify-center">
-        <a href="business.html" class="btn-menu">Empresa</a>
-        <div id="emp-btn">
-          <a href="employees.html" class="btn-menu">Colaboradores</a>
-        </div>
-        <a href="events.html" class="btn-menu">Eventos</a>
-      </nav>
-      <button><i class="fa-solid fa-circle-user fa-3x" style="color: #ffffff;"></i></button>
+  <header class="my-header">
+    <div class="logo">
+      <a href="homepage.html">
+        <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
+      </a>
     </div>
-
+    <div id="open-menu-lateral" class="menu-list">|||</div>
+    <ul class="header-items flex justify-around">
+      <li><a href="minha-empresa.html">Minha Empresa</a></li>
+      <li><a href="colaboradores.html">Colaboradores</a></li>
+      <li><a href="metas.html">Metas</a></li>
+    </ul>
+    <div class="user-icon">
+      <img src="../assets/images/user-icon.png" alt="Usuario">
+    </div>
+    <div id="menu-lateral">
+      <ul class="menu-lateral-options">
+        <li><a href="minha-empresa.html">Minha Empresa</a></li>
+        <li><a href="colaboradores.html">Colaboradores</a></li>
+        <li><a href="metas.html">Metas</a></li>
+      </ul>
+      <div id="close-menu-lateral" class="grid flex place-content-end">
+        <p id="btn-close-menu-lateral">
+          << </p>
+      </div>
+    </div>
   </header>
 
   <!-- Introdução -->
@@ -62,10 +71,10 @@
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded mt-10">
           Ver Gráficos
         </button>
-        </div>
       </div>
+    </div>
 
-  <!-- >>>Falta linkar botões com páginas - fazer com JS -->
+    <!-- >>>Falta linkar botões com páginas - fazer com JS -->
     <div class="card">
       <h3>METAS</h3>
       <i class="fa-solid fa-bullseye"></i>
@@ -85,8 +94,8 @@
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded mt-10">
           Editar Colaboradores
         </button>
+      </div>
     </div>
-  </div>
 
 
 

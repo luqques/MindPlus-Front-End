@@ -10,10 +10,10 @@ function showMenuLateral() {
 
 let closeMenuLateral = document.querySelectorAll("#close-menu-lateral");
 for (let close of closeMenuLateral) {
-  close.addEventListener(`click`, hideMenuLateral)
+  close.addEventListener(`click`, hiddenMenuLateral)
 }
 
-function hideMenuLateral() {
+function hiddenMenuLateral() {
   let menuLateral = document.querySelector("#menu-lateral");
   menuLateral.classList.remove(`menu-lateral-ativo`);
 }

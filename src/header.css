@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Hammersmith-One;
+    src: url(../assets/fonts/HammersmithOne-Regular.ttf);
+}
+
 @media (max-width: 2000px) {
     .my-header {
         height: 100px;

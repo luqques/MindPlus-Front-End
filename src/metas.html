@@ -7,6 +7,7 @@
     <title>Metas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
     <script src="index.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -31,26 +32,33 @@
 </head>
 
 <body>
-    <header class="adm-header py-3">
-        <div class="container mx-auto flex items-center justify-between">
-
-            <!-- Logo -->
-            <div class="flex items-center">
-                <button><img src="assets/images/logo.png" alt=""></button>
+    <header class="my-header">
+        <div class="logo">
+            <a href="homepage.html">
+                <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
+            </a>
+        </div>
+        <div id="open-menu-lateral" class="menu-list">|||</div>
+        <ul class="header-items flex justify-around">
+            <li><a href="minha-empresa.html">Minha Empresa</a></li>
+            <li><a href="colaboradores.html">Colaboradores</a></li>
+            <li><a href="metas.html">Metas</a></li>
+        </ul>
+        <div class="user-icon">
+            <img src="../assets/images/user-icon.png" alt="Usuario">
+        </div>
+        <div id="menu-lateral">
+            <ul class="menu-lateral-options">
+                <li><a href="minha-empresa.html">Minha Empresa</a></li>
+                <li><a href="colaboradores.html">Colaboradores</a></li>
+                <li><a href="metas.html">Metas</a></li>
+            </ul>
+            <div id="close-menu-lateral" class="grid flex place-content-end">
+                <p id="btn-close-menu-lateral">
+                    << </p>
             </div>
-
-            <!-- Botões Header -->
-            <nav class="flex justify-center">
-                <a href="business.html" class="btn-menu">Empresa</a>
-                <div id="emp-btn">
-                    <a href="employees.html" class="btn-menu">Colaboradores</a>
-                </div>
-                <a href="events.html" class="btn-menu">Eventos</a>
-            </nav>
-            <button><i class="fa-solid fa-circle-user fa-3x" style="color: #ffffff;"></i></button>
         </div>
     </header>
-
 
     <!-- Meta Atual (a ideia é mais pra frente alterar a cor conforme o preenchimento avança) -->
 
@@ -72,7 +80,7 @@
     </div>
 
 
-     <!-- Gráfico Mensal -->
+    <!-- Gráfico Mensal -->
 
     <div class=" bg-[#6FAFC3] py-3 px-10 ">
         <div class="text-2xl font-bold text-black"> Preenchimentos por Mês</div>
@@ -82,7 +90,7 @@
     </div>
 
 
-     <!-- Botões Anual -->
+    <!-- Botões Anual -->
 
     <div class="bg-[#6FAFC3] py-3 px-10 ">
         <div class="text-2xl font-bold text-black"> Preenchimentos por Ano</div>
@@ -92,4 +100,5 @@
     </div>
 
 </body>
+
 </html>

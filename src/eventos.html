@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header.css">
+  <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="my-header">
+    <div class="logo">
+      <a href="homepage.html">
+        <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
+      </a>
+    </div>
+    <div id="open-menu-lateral" class="menu-list">|||</div>
+    <ul class="header-items flex justify-around">
+      <li><a href="minha-empresa.html">Minha Empresa</a></li>
+      <li><a href="colaboradores.html">Colaboradores</a></li>
+      <li><a href="metas.html">Metas</a></li>
+    </ul>
+    <div class="user-icon">
+      <img src="../assets/images/user-icon.png" alt="Usuario">
+    </div>
+    <div id="menu-lateral">
+      <ul class="menu-lateral-options">
+        <li><a href="minha-empresa.html">Minha Empresa</a></li>
+        <li><a href="colaboradores.html">Colaboradores</a></li>
+        <li><a href="metas.html">Metas</a></li>
+      </ul>
+      <div id="close-menu-lateral" class="grid flex place-content-end">
+        <p id="btn-close-menu-lateral">
+          << </p>
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
