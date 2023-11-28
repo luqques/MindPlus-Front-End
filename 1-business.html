@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="adm-header py-3">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <button><img src="/assets/images/logo.png" alt="" class="h-8"></button>
+            </div>
+
+            <!-- Botões -->
+            <nav class="flex justify-center">
+                <div id="bsn-btn">
+                    <a href="business.html" class="btn-menu">Empresa</a>
+                </div>
+                <a href="employees.html" class="btn-menu">Colaboradores</a>
+                <a href="events.html" class="btn-menu">Eventos</a>
+                <button><i class="fa-solid fa-circle-user fa-3x" style="color: #ffffff;"></i></button>
+            </nav>
+        </div>
+    </header>
+
+
+
+    
+      <!-- Introdução -->
+    
+      <div class="intro">
+        <div class="text-5xl font-semibold text-black">Olá [Admin]!</div>
+        <div class="text-2xl text-black pt-4">Selecione uma opção</div>
+      </div>
+    
+      <!-- Cards -->
+    
+      <div class="cards">
+
+        <div class="card">
+          <h3>ESTATÍSTICAS</h3>
+          <i class="fa-solid fa-chart-pie" :></i>
+          <div class="description">
+            <p>Informações estatísticas detalhadas.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>METAS</h3>
+          <i class="fa-solid fa-bullseye"></i>
+          <div class="description">
+            <p>Metas a serem alcançadas.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3>MEUS COLABORADORES</h3>
+          <i class="fa-solid fa-users-gear"></i>
+          <div class="description">
+            <p>Informações sobre os colaboradores da equipe.</p>
+          </div>
+        </div>
+      </div>
+    
+    
+
+</body>
+
+</html>

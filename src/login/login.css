@@ -110,3 +110,239 @@
     margin-right: 10px;
     cursor: pointer;
 }
+<<<<<<< HEAD:src/login/login.css
+=======
+
+/* - O - O - O - ADMIN HEADER - O - O - O - */
+
+.adm-header {
+    background-color: #004AADCC;
+}
+
+.adm-header img {
+    height: auto;
+    width: 130px;
+    margin-bottom: -56px;
+}
+
+.btn-menu {
+    display: inline-block;
+    padding: 50px 16px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+    background-color: #276bc4cc;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-menu:hover {
+    background-color: #04306861;
+}
+
+/* - - - LD PAGE - - - */
+
+
+
+/* - - - BUSINESS - - - */
+
+#bsn-btn {
+    background-color: #04306861;
+    padding: 15px 0px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+
+/* - - - 2 EMPLOYEES - - - */
+
+
+/* header btn e intro */
+
+#emp-btn {
+    background-color: #04306861;
+    padding: 15px 0px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+.intro {
+    background-color: #c2eff1;
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-bottom: 2%;
+    margin-top: 3.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* cards */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.card {
+    position: relative;
+    width: 550px;
+    /* Largura total do card */
+    height: 150px;
+    background-color: #cbebeb;
+    text-align: center;
+    padding: 20px;
+    padding-top: 3.5%;
+    /* talvez aqui seja util para aumentar o tamanho mais tarde */
+    padding-bottom: 15%;
+    /* Define tamanho do card inf/sup na parte de baixo */
+    margin: 10px;
+    overflow: hidden;
+    transition: top 0.3s ease;
+    border-bottom-left-radius: 5dvh;
+    border-top-right-radius: 5dvh;
+    font-size: 22px;
+    box-shadow: 5px 4px 4px rgba(59, 59, 91, 0.492);
+}
+
+.card:hover {
+    /* Hover do card em si */
+    height: 300px;
+    /* Tamanho/altura da transição do card inferior */
+    transition: 0.45s;
+}
+
+.description {
+    position: absolute;
+    top: 97%;
+    /* Ajuste do topo do bloco de descrição, nessa % permite aparecer a bordinha inferior do card */
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    transition: top 0.3s ease;
+    background-color: #276bc4cc;
+    color: white;
+    font-size: medium;
+
+}
+
+.card:hover .description {
+    /* Hover da descrição */
+    top: 40%;
+    /* Ajuste para mostrar a descrição abaixo do card */
+}
+
+.card i {
+    /* Ícone */
+    font-size: 80px;
+    padding-top: 54px;
+    color: #276bc4cc;
+}
+
+.card:hover i {
+    /* Hover do ícone */
+    padding-top: 17%;
+    font-size: 115px;
+    transition: 0.2s linear;
+}
+
+/* - - - 2.1 CHART - - - */
+
+/* - - - 2.2 GOALS - - - */
+
+.goal-1-b {
+    background-color: #c2eff1;
+
+}
+
+.goal-1 {
+    background-color: #f1e730;
+
+}
+
+.goal-2 {
+    background-color: #fff;
+
+}
+
+.goal-3 {
+    background-color: #fff;
+
+}
+
+
+
+
+/* - - - 2.3 MY EMPLOYEES - - - */
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Estilos para o botão de editar */
+.edit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.my-emp-btn {
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    transform: translate(10%, 20%);
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* - - - EVENTS - - - */
+
+#evn-btn {
+    background-color: #04306861;
+    padding: 15px 0px;
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+>>>>>>> c2bd5860533029ba24b6bb71adf215e413c42420:style.css
