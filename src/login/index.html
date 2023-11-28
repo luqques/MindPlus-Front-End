@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem-Vindo(a) ao MindPlus</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../reset.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -19,18 +20,19 @@
     }
   </script>
 </head>
+
 <body>
   <div class="page">
     <form class="formLogin">
       <div class="flex place-content-center">
-        <img src="/assets/images/logo.png" class="logo-mindplus" alt="Logo MindPlus">
+        <img src="../../assets/images/logo.png" class="logo-mindplus" alt="Logo MindPlus">
       </div>
       <div><input type="email" id="email" placeholder="E-mail" autofocus="true" class="shadow-lg" /></div>
       <div><input type="password" id="senha" placeholder="Senha" autofocus="true" class="shadow-lg" /></div>
       <div id="keep-logged-in" class="flex place-content-center">
         <input type="checkbox" id="checkbox-keep-logged">Mantenha-me logado
       </div>
-      <a href="src/pages/homepage.html">
+      <a href="../homepage.html">
         <div class="btn-blue flex">
           <button type="button">Entrar</button>
         </div>
@@ -39,6 +41,7 @@
   </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="index.js"></script>
+  <script src="../index.js"></script>
 </body>
+
 </html>

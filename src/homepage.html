@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -27,14 +27,14 @@
     <div class="logo">
       <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
     </div>
-    <div id="open-menu-lateral" class="menu-list justify-items-end">|||</div>
+    <div id="open-menu-lateral" class="menu-list">|||</div>
     <ul class="header-items flex justify-around">
       <li>Minha Empresa</li>
       <li>Avaliações</li>
       <li>Consultas</li>
     </ul>
     <div class="user-icon">
-      <img src="../assets/images/circle-user-regular.svg" alt="Usuario">
+      <img src="../assets/images/user-icon.png" alt="Usuario">
     </div>
     <div id="menu-lateral">
       <ul class="menu-lateral-options">
@@ -49,60 +49,56 @@
     </div>
   </header>
 
-  <div class="frase">
-    <div class="quadrado font-bold shadow-2xl">
-      <img src="https://www.rpinfo.com.br/views/geral/img/aspas.png" alt="sky">
+  <div class="fundo-banner">
+    <div class="banner">
+      <img src="../assets/images/aspas.png">
       <h2>Só a experiência própria é capaz de tornar sábio o ser humano.</h2>
-      <br><br>
-      <h4 class="text-base"> Sigmund Freud </h4>
+      <h4 class="my-8">Sigmund Freud</h4>
     </div>
   </div>
   <div class="container mx-auto">
-    <h1 class="title1 text-4xl text-center text-blue-800 underline underline-offset-8 p-10 font-mono font-bold">
+    <h1 class="text-4xl text-center text-blue-800 underline underline-offset-8 p-10 font-mono font-bold">
       Recursos</h1>
-    <div class="grid grid-cols-1 mx-10 sm:grid-cols-2 mx-5 md:grid-cols-3 mx-5 lg:grid-cols-4 mx-5 gap-4">
+    <div class="grid grid-cols-1 mx-10 sm:grid-cols-2 mx-5 md:grid-cols-3 mx-5 lg:grid-cols-4 gap-4">
       <div class="card p-2 flex flex-col items-center border-solid border-2 shadow-lg ">
         <img src="../assets/images/2.png" alt="" class="imagem-card image12 h-60">
-        <h1
-          class="title1 text-blue-800 text-2xl mt-2 font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
-          Conscientização</h1>
-        <div class=" text-card mt-4 p-4 text-center">Treinamentos regulares para gestores e colaboradores sobre sinais de
+        <h1 class="text-blue-800 text-2xl font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
+          Conscientização
+        </h1>
+        <div class="text-card text-center">Treinamentos regulares para gestores e colaboradores sobre sinais
+          de
           estresse, ansiedade e depressão, bem como estratégias para lidar com essas questões.</div>
-        <input type="button" value="Treinamentos"
-          class="button-card bg-blue-800  from-cyan-500 to-blue-500 text-slate-50 border-4 border-blue-800 rounded-md text-md cursor-pointer font-bold">
+        <input type="button" value="Treinamentos" class="button-card bg-blue-800 rounded-md text-md cursor-pointer">
       </div>
       <div class="card p-2 flex flex-col items-center border-solid border-2 shadow-lg ">
         <img src="../assets/images/3.png" alt="" class="imagem-card image12 h-60">
-        <h1
-          class="title1 text-blue-800 text-2xl mt-2 font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
-          Acesso a recursos</h1>
-        <div class="text-card mt-2 p-4 text-center">Possuímos recursos internos e externos para suporte à saúde mental,
+        <h1 class="text-blue-800 text-2xl font-bold font-mono underline underline-offset-8 text-center">
+          Acesso a recursos
+        </h1>
+        <div class="text-card text-center">Possuímos recursos internos e externos para suporte à saúde mental,
           como linhas diretas de ajuda, profissionais de saúde mental e aplicativos.
           Além de uma lista de leituras, vídeos e recursos online que promovem a saúde mental.</div>
-        <input type="button" value="Experimente aqui"
-          class="button-card bg-blue-800 from-cyan-500 to-blue-500 text-slate-50 border-4 border-blue-800 rounded-md text-md cursor-pointer font-bold">
+        <input type="button" value="Experimente aqui" class="button-card bg-blue-800 rounded-md text-md cursor-pointer">
       </div>
       <div class="card p-2 flex flex-col items-center border-solid border-2 shadow-lg ">
         <img src="../assets/images/4.png" alt="" class="imagem-card image12 h-60">
-        <h1
-          class="title1 text-blue-800 text-2xl mt-2 font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
-          Avaliações Regulares</h1>
-        <div class="text-card mt-2 p-4 text-center">Implementamos avaliações regulares da saúde mental para entender as
-          necessidades específicas de nossos colaboradores. Utilizamos pesquisas anônimas para avaliar o nível
-          de estresse, satisfação e bem-estar no trabalho.</div>
-        <input type="button" value="Avalie também!"
-          class="button-card bg-blue-800 from-cyan-500 to-blue-500 text-slate-50 border-4 border-blue-800 rounded-md text-md cursor-pointer font-bold">
+        <h1 class="text-blue-800 text-2xl font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
+          Avaliações Regulares
+        </h1>
+        <div class="text-card text-center">Implementamos avaliações regulares da saúde mental para entender as
+          necessidades específicas de nossos colaboradores. Utilizamos pesquisas anônimas para avaliar o nível de
+          estresse, satisfação e bem-estar no trabalho.</div>
+        <input type="button" value="Avalie também!" class="button-card grid content-end bg-blue-800 cursor-pointer">
       </div>
       <div class="card p-2 flex flex-col items-center border-solid border-2 shadow-lg ">
-        <img src="../assets/images/1.png" alt="" class="imagem-card image12 h-60">
-        <h1
-          class="title1 text-blue-800 text-2xl mt-2 font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
-          Cultura de Apoio</h1>
-        <div class="text-card mt-4 p-4 text-center">Valorizamos o equilíbrio entre trabalho e vida pessoal.Encorajamos uma
+        <img src="../assets/images/1.png" alt="" class="image12 h-60">
+        <h1 class="text-blue-800 text-2xl font-bold font-mono underline underline-offset-8 text-center cursor-pointer">
+          Cultura de Apoio
+        </h1>
+        <div class="text-card text-center">Valorizamos o equilíbrio entre trabalho e vida pessoal. Encorajamos uma
           atmosfera de abertura e suporte, onde os colaboradores se sintam à vontade para compartilhar suas
           preocupações.</div>
-        <input type="button" value="Opine"
-          class="button-card bg-blue-800 from-cyan-500 to-blue-500 text-slate-50 border-4 border-blue-800 rounded-md text-md cursor-pointer font-bold">
+        <input type="button" value="Opine" class="button-card bg-blue-800 rounded-md text-md cursor-pointer">
       </div>
     </div>
   </div>
