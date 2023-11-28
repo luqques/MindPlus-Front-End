@@ -58,12 +58,7 @@
   .menu-list {
     visibility: hidden;
   }
-
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
+  
  .frase {
     background-image: url('img/sky.jfif');
     width: 100vw;
@@ -97,21 +92,6 @@
     border-color: #004AAD;
     border-radius: 4px;    
  }
-
-.banner2 {
-    display: flex;
-    background-color: #004AAD;
-}
-
-
-.abc {
-
-    height: 500px;
-    background-image: url('img/6.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
 
 }
 
