@@ -11,10 +11,8 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', { 'packages': ['bar'] });
-        google.charts.setOnLoadCallback(drawChart);
-        google.charts.setOnLoadCallback(drawChart2);</script>
+        google.charts.setOnLoadCallback(drawChart);</script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
     <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,13 +28,12 @@
             }
         }
     </script>
-
-
 </head>
 
 <body>
     <header class="adm-header py-3">
         <div class="container mx-auto flex items-center justify-between">
+
             <!-- Logo -->
             <div class="flex items-center">
                 <button><img src="assets/images/logo.png" alt=""></button>
@@ -52,8 +49,8 @@
             </nav>
             <button><i class="fa-solid fa-circle-user fa-3x" style="color: #ffffff;"></i></button>
         </div>
-
     </header>
+
 
     <!-- Meta Atual (a ideia é mais pra frente alterar a cor conforme o preenchimento avança) -->
 
@@ -61,22 +58,21 @@
         <div class="text-2xl font-bold text-black"> Metas de Adesão</div>
     </div>
 
-
     <div class="goal-1-b px-[5%] pt-2 pb-4 mb-[2.5%]">
-
         <div
             class="goal-1 text-2xl w-[15%] h-32 float-left pl-4 pt-4 ml-[4%] mt-[-0.3%] border-solid border-2 rounded-xl border-white">
             10 <br><b>NOVEMBRO</b><br> 2023</div>
-
         <div
             class="goal-2 text-xl w-[80%] h-12 ml-[18%] pr-4 pt-2 mt-[0.7%] mb-[0.5%] border-solid border-2 border-[#276bc4cc] text-right">
             <b>1400</b> de <b>2000</b> preenchimentos
         </div>
-
         <div class="goal-3 text-xl w-[80%] h-12 ml-[18%] pr-4 pt-2 border-solid border-2 border-[#276bc4cc] text-right">
             Faltam <b>100</b> colaboradores para atingir a sua meta mensal</div>
-        <!-- Talvez fazer tipo 3/4 de preenchimento é a meta (verde). 1/4 de preenchimento fica vermelho. O meio termo fica amarelo. -->
+        <!-- Mais tarde pretendo fazer um limite tipo 3/4 de preenchimento é a meta (verde). 1/4 de preenchimento fica vermelho. O meio termo fica amarelo. -->
     </div>
+
+
+     <!-- Gráfico Mensal -->
 
     <div class=" bg-[#6FAFC3] py-3 px-10 ">
         <div class="text-2xl font-bold text-black"> Preenchimentos por Mês</div>
@@ -85,14 +81,15 @@
         <div id="columnchart_material1" style="width: 800px; height: 500px;"></div> <!-- Gráfico 1 -->
     </div>
 
+
+     <!-- Botões Anual -->
+
     <div class="bg-[#6FAFC3] py-3 px-10 ">
         <div class="text-2xl font-bold text-black"> Preenchimentos por Ano</div>
     </div>
     <div class="bg-[#c2eff1] pb-[5%] pt-[5%] flex flex-row justify-center items-center">
         <div id="columnchart_material2" style="width: 800px; height: 500px;"></div> <!-- Gráfico 2 -->
     </div>
-    
 
 </body>
-
 </html>
