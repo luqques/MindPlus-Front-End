@@ -58,8 +58,8 @@
   .menu-list {
     visibility: hidden;
   }
-  
- .frase {
+
+  .frase {
     background-image: url('img/sky.jfif');
     width: 100vw;
     height: 60vh;
@@ -68,31 +68,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
- }
+  }
 
- .quadrado {
+  .quadrado {
     width: 700px;
     height: 350px;
     background-color: #004AAD;
     z-index: 2;
     color: white;
-    font-size: 1.50rem; 
-    line-height: 1.79rem; 
+    font-size: 1.50rem;
+    line-height: 1.79rem;
     text-align: center;
     padding: 100px;
- }
+  }
 
- .quadrado img {
+   .quadrado img {
     width: 20px;
     z-index: 3;
     display: flex;
- }
+  } 
 
- .card {
+  .card {
     border-color: #004AAD;
-    border-radius: 4px;    
- }
+    border-radius: 4px;
+  }
 
+  .text-card {
+    height: 250px;
+  }
+
+  .button-card {
+    height: 40px;
+    width: 200px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    font-family: Hammersmith-One;
+    font-size: 16px;
+    place-content: center;
+  }
+
+  .imagem-card{
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
