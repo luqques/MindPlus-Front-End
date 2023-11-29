@@ -65,7 +65,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
 
     .header-items,
     .user-icon {
@@ -93,7 +93,7 @@
         color: white;
         cursor: pointer;
     }
-    
+
     .logo img {
         width: 80px;
     }
