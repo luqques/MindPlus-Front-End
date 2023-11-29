@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="usuario.css">
-    <link rel="stylesheet" href="../src/header.css">
-    <link rel="stylesheet" href="../src/reset.css">
+    <link rel="stylesheet" href="../utils/header.css">
+    <link rel="stylesheet" href="../utils/reset.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,26 +25,24 @@
 <body>
     <header class="my-header">
         <div class="logo">
-            <a href="homepage.html">
-                <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
+            <a href="../homepage/homepage.html">
+                <img src="../../assets/images/logo-sem-escrita.png" alt="Logo" />
             </a>
         </div>
         <div id="open-menu-lateral" class="menu-list">|||</div>
         <ul class="header-items flex justify-around">
-            <li><a href="minha-empresa.html">Minha Empresa</a></li>
-            <li><a href="avaliacoes.html">Avaliações</a></li>
-            <li><a href="metas.html">Metas</a></li>
+            <li><a href="../estatisticas/estatisticas.html">Estatísticas</a></li>
+            <li><a href="../colaboradores/colaboradores.html">Colaboradores</a></li>
+            <li><a href="../metas/metas.html">Metas</a></li>
         </ul>
         <div class="user-icon">
-            <a href="usuario.html">
-                <img src="../assets/images/user-icon.png" alt="Usuario">
-            </a>
+            <a href="usuario.html"><img src="../../assets/images/user-icon.png" alt="Usuario"></a>
         </div>
         <div id="menu-lateral">
             <ul class="menu-lateral-options">
-                <li><a href="minha-empresa.html">Minha Empresa</a></li>
-                <li><a href="avaliacoes.html">Avaliações</a></li>
-                <li><a href="metas.html">Metas</a></li>
+                <li><a href="../estatisticas/estatisticas.html">Estatísticas</a></li>
+                <li><a href="../colaboradores/colaboradores.html">Colaboradores</a></li>
+                <li><a href="../metas/metas.html">Metas</a></li>
             </ul>
             <div id="close-menu-lateral" class="grid flex place-content-end">
                 <p id="btn-close-menu-lateral">
@@ -54,7 +52,7 @@
     </header>
     <div class="user-page flex">
         <div class="user-info">
-            <img src="../assets/images/user-picture.jpg" alt="user-pic" />
+            <img src="../../assets/images/user-picture.jpg" alt="user-pic" />
             <h1>Paola Kloch</h1>
         </div>
         <div class="user-data">
@@ -71,7 +69,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="index.js"></script>
+    <script src="../utils/index.js"></script>
 </body>
 
 </html>
