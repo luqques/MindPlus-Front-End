@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meus Colaboradores</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="../utils/style.css">
+  <link rel="stylesheet" href="../utils/header.css">
+  <link rel="stylesheet" href="../utils/reset.css">
   <script src="https://kit.fontawesome.com/f9c6abbc59.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -23,27 +23,30 @@
   </script>
 </head>
 
+
+<!-- Header -->
+
 <body>
   <header class="my-header">
     <div class="logo">
-      <a href="homepage.html">
-        <img src="../assets/images/logo-sem-escrita.png" alt="Logo" />
+      <a href="../homepage/homepage.css">
+        <img src="../../assets/images/logo-sem-escrita.png" alt="Logo" />
       </a>
     </div>
     <div id="open-menu-lateral" class="menu-list">|||</div>
     <ul class="header-items flex justify-around">
-      <li><a href="minha-empresa.html">Minha Empresa</a></li>
-      <li><a href="colaboradores.html">Colaboradores</a></li>
-      <li><a href="metas.html">Metas</a></li>
+      <li><a href="../estatisticas/estatisticas.html">Estatísticas</a></li>
+      <li><a href="../colaboradores/colaboradores.html">Colaboradores</a></li>
+      <li><a href="../metas/metas.html">Metas</a></li>
     </ul>
     <div class="user-icon">
-      <img src="../assets/images/user-icon.png" alt="Usuario">
+      <img src="../../assets/images/user-icon.png" alt="Usuario">
     </div>
     <div id="menu-lateral">
       <ul class="menu-lateral-options">
-        <li><a href="minha-empresa.html">Minha Empresa</a></li>
-        <li><a href="colaboradores.html">Colaboradores</a></li>
-        <li><a href="metas.html">Metas</a></li>
+        <li><a href="../estatisticas/estatisticas.html">Estatísticas</a></li>
+        <li><a href="../colaboradores/colaboradores.html">Colaboradores</a></li>
+        <li><a href="../metas/metas.html">Metas</a></li>
       </ul>
       <div id="close-menu-lateral" class="grid flex place-content-end">
         <p id="btn-close-menu-lateral">
@@ -58,15 +61,14 @@
     <div class="text-2xl font-semibold text-black">Editar informações sobre os <b>Colaboradores</b></div>
   </div>
 
-
   <!-- Adicionar Colaborador -->
 
   <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">ADICIONAR Colaborador
+    onclick="openModal('addCol', 'overlayAddCol')">ADICIONAR Colaborador
   </button>
 
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
+  <div class="modal-overlay" id="overlayAddCol" onclick="closeModal('addCol','overlayAddCol')"></div>
+  <div class="modal" id="addCol">
 
     <h2>Adicionar Colaborador do Mind+</h2>
     <p>[FORM Adição de Colaboradores]</p>
@@ -76,11 +78,11 @@
   <!-- Alterar Colaborador -->
 
   <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">ALTERAR Colaborador
+    onclick="openModal('editCol', 'overlayEditCol')">ALTERAR Colaborador
   </button>
 
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
+  <div class="modal-overlay" id="overlayEditCol" onclick="closeModal('editCol','overlayEditCol')"></div>
+  <div class="modal" id="editCol">
 
     <h2>Editar Colaborador do Mind+</h2>
     <p>[FORM Edição de Colaboradores]</p>
@@ -90,11 +92,11 @@
   <!-- Remover Colaborador -->
 
   <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">REMOVER Colaborador
+    onclick="openModal('delCol','overlayDelCol')">REMOVER Colaborador
   </button>
 
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
+  <div class="modal-overlay" id="overlayDelCol" onclick="closeModal('delCol','overlayDelCol')"></div>
+  <div class="modal" id="delCol">
 
     <h2>Remover Colaborador do Mind+</h2>
     <p>[FORM Remoção de Colaboradores]</p>
@@ -104,17 +106,17 @@
   <!-- Visualizar Colaboradores -->
 
   <button class="my-emp-btn shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded edit-button"
-    onclick="openModal()">VER Colaboradores
+    onclick="openModal('readCol','overlayReadCol')">VER Colaboradores
   </button>
 
-  <div class="modal-overlay" onclick="closeModal()"></div>
-  <div class="modal" id="modal">
+  <div class="modal-overlay" id="overlayReadCol" onclick="closeModal('readCol','overlayReadCol')"></div>
+  <div class="modal" id="readCol">
 
     <h2>Visualizar Colaboradores cadastrados no Mind+</h2>
     <p>[FORM Visualização de Colaboradores]</p>
   </div>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="index.js"></script>
-</body>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../utils/index.js"></script>
+</body>
 </html>

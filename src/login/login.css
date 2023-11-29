@@ -35,7 +35,7 @@
     background-color: rgba(163, 228, 233, 0.51);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     .formLogin {
         width: 300px;
         display: flex;

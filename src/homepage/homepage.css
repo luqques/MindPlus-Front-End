@@ -1,10 +1,10 @@
 @font-face {
   font-family: Hammersmith-One;
-  src: url(../assets/fonts/HammersmithOne-Regular.ttf);
+  src: url(../../assets/fonts/HammersmithOne-Regular.ttf);
 }
 
 .fundo-banner {
-  background-image: url('../assets/images/sky.jfif');
+  background-image: url('../../assets/images/sky.jfif');
   width: 100vw;
   height: 60vh;
   background-size: cover;
@@ -16,13 +16,13 @@
 }
 
 .banner {
-  width: 70%;
+  width: 700px;
   margin: 70px auto;
   height: 350px;
   background-color: #004AAD;
   z-index: 1;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   padding: 100px;
 }
@@ -75,7 +75,7 @@
   transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
 
   .fundo-banner,
   .banner {
