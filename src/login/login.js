@@ -1,3 +1,12 @@
+var loggedText = document.getElementById('keep-logged-in');
+var loggedCheckbox = document.getElementById('checkbox-keep-logged');
+loggedText.addEventListener('click', function() {
+    loggedCheckbox.checked = !loggedCheckbox.checked;
+});
+loggedCheckbox.addEventListener('click', function() {
+    loggedCheckbox.checked = !loggedCheckbox.checked;
+});
+
 $(() => {
 
   $(".btn-entrar").click(() => {
