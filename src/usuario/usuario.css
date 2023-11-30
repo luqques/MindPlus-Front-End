@@ -91,8 +91,6 @@
 
     .info-grid2 {
         display: flex;
-        flex-direction: column;
-
     }
 
     .info-grid2 h2 {
@@ -100,4 +98,23 @@
         margin-left: 30px;
         width: 430px;
     }
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    padding-top: 0px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 1px solid rgb(193, 215, 228);
+}
+
+.container-info span {
+    font-size: 10px;
+}
+
+.container-info input {
+    outline: none;
 }
