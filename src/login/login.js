@@ -13,7 +13,7 @@ $(() => {
     const values = {
       email: $("#email")[0].value,
       senha: $("#senha")[0].value,
-      materLogado: $("#checkbox-keep-logged")[0].value
+      manterLogado: $("#checkbox-keep-logged")[0].checked
     }
 
     if (!values.email) {
@@ -32,6 +32,6 @@ $(() => {
     
     console.log(values);
 
-    window.location.href = "../homepage/homepage.html";
+    // window.location.href = "../homepage/homepage.html";
   });
 });
