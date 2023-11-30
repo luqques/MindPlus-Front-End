@@ -83,7 +83,7 @@
     color: #f72585;
 }
 
-.btn-blue {
+.btn-entrar {
     height: 40px;
     background-color: rgba(0, 74, 173, 0.80);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -93,6 +93,20 @@
     font-size: 16px;
     font-weight: 400;
     place-content: center;
+}
+
+.btn-entrar:hover {
+    height: 40px;
+    background-color: rgba(2, 65, 148, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    font-family: Hammersmith-One;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 16px;
+    font-weight: 400;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 #keep-logged-in {
