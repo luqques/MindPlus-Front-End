@@ -20,6 +20,9 @@ $(() => {
       return;
     }
     $("#senha").removeClass("invalid");
+    
+    console.log(values);
 
+    window.location.href = "../homepage/homepage.html";
   });
 });
