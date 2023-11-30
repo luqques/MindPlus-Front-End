@@ -1,29 +1,30 @@
-$(() => {
-    
-    $("#button-save").click(() => {
-        const values = {
-            email: $("#email")[0].value,
-            contato: $("#contato")[0].value,
-            endereco: 10,
-            cargo: $("#cargo")[0].value,
-            contratacao: $("#contratacao")[0].value,
-            empresa: $("#empresa")[0].value
-        }
+$(document).ready(function() {
 
-        if (!values.email) {
-            alert("email não informado!");
-            $("#email").addClass("invalid");
-            return;
-        }
-        $("#email").removeClass("invalid");
+    // Função para sallet informações
+    function salletInformacoes() {
+        // Recuperar os valores dos campos
+        let email = $("#email input").val();
+        let contato = $("#contato input").val();
+        let endereco = $("#endereço input").val();
+        let cargo = $("#cargo input").val();
+        let modeloContratacao = $("#modelo-de-contratação input").val();
+        let minhaEmpresa = $("#minha-empresa input").val();
 
-        if (!values.contato) {
-            alert("contato não informado");
-            $("#contato").addClass("invalid");
-            return;
-        }
-        $("#contato").removeClass("invalid");
-        
-        console.log(values);
-    });
-})
+        // Aqui você pode enviar os dados para o servidor ou fazer o que for necessário com eles
+        // Por enquanto, apenas exibindo no console para demonstração
+        console.log("Email: " + email);
+        console.log("Contato: " + contato);
+        console.log("Endereço: " + endereco);
+        console.log("Cargo: " + cargo);
+        console.log("Modelo de Contratação: " + modeloContratacao);
+        console.log("Minha Empresa: " + minhaEmpresa);
+
+        // Adicione aqui a lógica para enviar os dados para o servidor ou armazená-los localmente.
+    }
+
+    // Associar a função ao clique do botão sallet
+    $("#button-save").on("click", salletInformacoes);
+
+    // Outras funções (cancelarAcao(), excluirsuario()) podem ser adicionadas aqui ou em outros lugares do seu script, conforme necessário.
+
+});
