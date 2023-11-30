@@ -35,5 +35,3 @@ $(() => {
     // window.location.href = "../homepage/homepage.html";
   });
 });
-
-//trocando de conta
