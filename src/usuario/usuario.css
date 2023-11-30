@@ -71,14 +71,14 @@
   justify-content: center;
 }
 
-#button {
+/* #button {
   background: white;
   padding: 5px;
   margin-top: 15px;
   margin-left: 20px;
   border-radius: 2px;
   border: 1px solid rgb(193, 215, 228);
-}
+} */
 
 #button-save {
   padding: 5px;
@@ -148,14 +148,14 @@
     justify-content: center;
   }
 
-  #button {
+  /* #button {
     background: white;
     padding: 5px;
     margin-top: 15px;
     margin-left: 20px;
     border-radius: 2px;
     border: 1px solid rgb(193, 215, 228);
-  }
+  } */
   
   #button-save {
     padding: 5px;
