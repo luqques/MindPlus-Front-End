@@ -67,8 +67,7 @@
 
 @media (max-width: 430px) {
 
-    .header-items,
-    .user-icon {
+    .header-items {
         visibility: hidden;
     }
 
@@ -76,7 +75,7 @@
     #open-menu-lateral {
         font-size: 30px;
         margin-top: 30px;
-        margin-left: 85%;
+        margin-left: 40px;
         position: absolute;
         visibility: visible;
         transform: rotate(90deg);
@@ -87,19 +86,12 @@
     }
 
     .logo {
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-        color: white;
-        cursor: pointer;
-    }
-
-    .logo img {
-        width: 1000px;
+        visibility: hidden;
     }
 
     .menu-lateral-ativo {
         display: block !important;
+        transition: 1s;
     }
 
     .menu-lateral-options,
@@ -116,7 +108,6 @@
         z-index: 5;
         background-color: rgba(8, 65, 139);
         display: none;
-        transition: 0.5s;
         font-family: Hammersmith-One;
     }
 
@@ -139,6 +130,16 @@
         color: white;
         display: block;
         transition: 0.3s;
+    }
+
+    .user-icon {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-icon img {
+        width: 100%;
     }
 
     #btn-close-menu-lateral {
