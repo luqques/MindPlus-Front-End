@@ -57,19 +57,41 @@
         </div>
         <div class="user-data">
             <div class="info-grid1">
-                <h2>E-mail: paola.lopes@mouts.info</h2>
-                <h2> Contato: (47) 99286-1109</h2>
-                <h2>Endereço: Avenida Brasil</h2>
+                <form action="">
+                    <div class="container-info">
+                        <span>E-mail</span>
+                        <input type="text" id="email" class="label-name" value="paola.lopes@mouts.info">
+                    </div>
+                    <div class="container-info">
+                        <span>Contato</span>
+                        <input type="text" id="contato" class="label-name" value="(47) 99286-1109">
+                    </div>
+                    <div class="container-info">
+                        <span>Endereço</span>
+                        <input type="text" id="endereco" class="label-name" value="Indaial">
+                    </div>
             </div>
             <div class="info-grid2">
-                <h2>Cargo: SDR</h2>
-                <h2>Minha empresa: Mouts TI</h2>
-                <h2>Modelo de contratação: PJ</h2>
+                <div class="container-info">
+                    <span>Cargo</span>
+                    <input type="text" id="cargo" class="label-name" value="SDR">
+                </div>
+                <div class="container-info">
+                    <span>Modelo de contratação</span>
+                    <input type="text" id="modeloContratacao" class="label-name" value="PJ">
+                </div>
+                <div class="container-info">
+                    <span>Empresa</span>
+                    <input type="text" id="minhaEmpresa" class="label-name" value="Mouts TI">
+                </div>
             </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../utils/index.js"></script>
+            <div class="button-user">
+                <button type="button" id="button-save">Salvar</button>
+            </div>
+            </form>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+            <script src="../utils/index.js"></script>
+            <script src="usuario.js"></script>
 </body>
 
 </html>
