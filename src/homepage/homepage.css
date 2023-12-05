@@ -70,8 +70,9 @@
 
 .text-card {
   min-height: 200px;
-  font-size: 19px;
-  padding: 10px;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-left: 10px;
   color: #66666696;
 }
 
