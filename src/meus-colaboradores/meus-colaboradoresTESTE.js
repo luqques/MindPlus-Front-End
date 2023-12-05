@@ -1,16 +1,13 @@
 function editEmployee() {
-    // Aqui você pode acessar os valores dos campos do formulário
     const email = document.getElementById('email').value;
     const name = document.getElementById('name').value;
     const position = document.getElementById('position').value;
-    const department = document.getElementById('department').value;
+    const phone = document.getElementById('phone').value;
+    const business = document.getElementById('business').value;
+    const adress = document.getElementById('adress').value;
+    const contract = document.getElementById('contract').value;
 
-    // Lógica para enviar os dados do formulário para o backend (pode ser uma requisição AJAX, por exemplo)
-    // Aqui você pode enviar os dados para atualizar as informações do colaborador com o email fornecido
-    console.log(`E-mail: ${email}, Nome: ${name}, Posição: ${position}, Departamento: ${department}`);
-    // Você pode adicionar aqui a lógica para enviar esses dados para o backend
-
-    // Aqui você pode adicionar o código para limpar os campos após a submissão do formulário, se necessário
+    console.log(`E-mail: ${email}, Nome: ${name}, Cargo: ${position}, Contato: ${phone}, Empresa: ${business}, Endereço: ${adress}, Contrato: ${contract}`);
     document.getElementById('editForm').reset();
 
 }
@@ -18,6 +15,11 @@ function editEmployee() {
 
 
 
+/*
+
+teste pois a malu já esta trabalhando com os scripts 
+
+*/
 
 
 
