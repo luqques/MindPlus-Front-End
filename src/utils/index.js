@@ -8,7 +8,10 @@ for (let open of openMenuLateral) {
 
 function showMenuLateral() {
   let menuLateral = document.querySelector("#menu-lateral");
-  menuLateral.classList.add(`menu-lateral-ativo`);
+
+  setTimeout(() => {
+    menuLateral.classList.add(`menu-lateral-ativo`);
+  }, 100);
 }
 
 let closeMenuLateral = document.querySelectorAll("#close-menu-lateral");
@@ -18,7 +21,10 @@ for (let close of closeMenuLateral) {
 
 function hiddenMenuLateral() {
   let menuLateral = document.querySelector("#menu-lateral");
-  menuLateral.classList.remove(`menu-lateral-ativo`);
+
+  setTimeout(() => {
+    menuLateral.classList.remove(`menu-lateral-ativo`);
+  }, 100)
 }
 
 

@@ -6,10 +6,12 @@
 @media (max-width: 3000px) {
     .my-header {
         height: 100px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         background-color: #004AAD;
         font-family: Hammersmith-One;
+        position: fixed;
+        top: 0;
     }
 
     .logo {
@@ -67,6 +69,10 @@
 
 @media (max-width: 430px) {
 
+    body {
+        padding-top: 100px !important;
+    }
+
     .header-items {
         visibility: hidden;
     }
@@ -91,7 +97,6 @@
 
     .menu-lateral-ativo {
         display: block !important;
-        transition: 1s;
     }
 
     .menu-lateral-options,
@@ -109,6 +114,7 @@
         background-color: rgba(8, 65, 139);
         display: none;
         font-family: Hammersmith-One;
+        transition: transform 1s ease;
     }
 
     #menu-lateral ul li {
