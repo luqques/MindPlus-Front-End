@@ -107,6 +107,11 @@
 
     /* - - - 2.1 CHART - - - */
 
+    .grafico-mensal {
+        display: block;
+        z-index: -10 !important;
+    }
+    
     /* - - - 2.2 GOALS - - - */
 
     .goal-1-b {
@@ -261,6 +266,10 @@
         height: 300px;
         /* Tamanho/altura da transição do card inferior */
         transition: 0.45s;
+    }
+
+    .grafico-mensal {
+        z-index: -10 !important;
     }
 
     .description {
