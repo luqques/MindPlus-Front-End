@@ -3,80 +3,133 @@
   src: url(../../assets/fonts/HammersmithOne-Regular.ttf);
 }
 
-.fundo-banner {
-  background-image: url('../../assets/images/sky.jfif');
-  width: 100vw;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
+.background-banner {
   display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
   justify-content: center;
-  align-items: center;
   font-family: Hammersmith-One;
 }
 
+.background-banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .banner {
-  width: 700px;
-  margin: 70px auto;
-  height: 350px;
-  background-color: #004AAD;
-  z-index: 1;
   color: white;
   font-size: 25px;
+  place-content: center;
   text-align: center;
   padding: 100px;
 }
 
 .banner img {
-  width: 20px;
-  z-index: 1;
   display: flex;
+  width: 15px;
+}
+
+.banner h2 {
+  width: 800px;
+  font-size: 25px;
+}
+
+.banner h6 {
+  width: 800px;
+  margin-top: 30px;
+  font-size: 15px;
 }
 
 .card {
-  border-color: #004AAD;
+  display: flex;
+  height: 450px;
+  padding: 10px;
+   margin-top: 50px;
+  border-color: #004bad3a;
+  background-color: aliceblue;
   border-radius: 10px;
 }
 
 .card h1 {
-  min-height: 50px;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  min-height: 10px;
+  margin-bottom: 5px;
+}
+
+.card-tittle {
+  height: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: Hammersmith-One;
 }
 
 .text-card {
-  min-height: 300px;
-  font-size: 20px;
-  margin-bottom: 20px;
+  min-height: 200px;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-left: 10px;
+  color: #66666696;
+}
+
+.image-card1 {
+  background: url(../../assets/images/conscientizacao.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card2 {
+  background: url(../../assets/images/acesso-a-recursos.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card3 {
+  background: url(../../assets/images/avaliacoes.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card4 {
+  background: url(../../assets/images/apoio.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .button-card {
-  height: 40px;
-  width: 80%;
-  margin-bottom: 20px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 5px;
-  color: white;
+  height: 50px;
+  width: 100%;
+  place-content: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   font-family: Hammersmith-One;
   font-size: 16px;
-  place-content: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
 }
 
 .button-card:hover {
-  height: 40px;
-  width: 80%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 5px;
-  color: white;
+  height: 80px;
+  width: 100%;
+  place-content: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   font-family: Hammersmith-One;
   font-size: 16px;
-  place-content: center;
-  background-color: #3372c4;
   transition: 0.5s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: rgba(69, 113, 170, 0.881);
 }
 
 @media (max-width: 430px) {
-
   .fundo-banner,
   .banner {
     visibility: hidden;
