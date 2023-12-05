@@ -3,28 +3,29 @@
   src: url(../../assets/fonts/HammersmithOne-Regular.ttf);
 }
 
-.fundo-banner {
+.background-banner {
   background-image: url('../../assets/images/sky.jfif');
   width: 100vw;
-  height: 60vh;
+  height: 30vh;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  place-content: center;
   font-family: Hammersmith-One;
+  margin-bottom: 100px;
 }
 
 .banner {
   width: 700px;
-  margin: 70px auto;
-  height: 350px;
-  background-color: #004AAD;
-  z-index: 1;
+  height: 200px;
+  background-color: #004bad2f;
   color: white;
   font-size: 25px;
+  place-content: center;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 .banner img {
@@ -33,33 +34,80 @@
   display: flex;
 }
 
+.banner h2 {
+  width: 500px;
+
+}
+
+.banner h6 {
+  width: 500px;
+  font-size: 20px;
+}
+
+
 .card {
-  border-color: #004AAD;
+  display: flex;
+  margin-bottom: 50px;
+  border-color: #004bad3a;
+  background-color: aliceblue;
   border-radius: 10px;
 }
 
 .card h1 {
   min-height: 50px;
-  margin-top: 25px;
   margin-bottom: 20px;
+}
+
+.card-tittle {
+  font-family: Hammersmith-One;
 }
 
 .text-card {
   min-height: 300px;
   font-size: 20px;
+  padding: 30px;
   margin-bottom: 20px;
+  color: #666;
+}
+
+.image-card1 {
+  background: url(../../assets/images/conscientizacao.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card2 {
+  background: url(../../assets/images/acesso-a-recursos.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card3 {
+  background: url(../../assets/images/avaliacoes.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card4 {
+  background: url(../../assets/images/apoio.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .button-card {
   height: 40px;
-  width: 80%;
-  margin-bottom: 20px;
+  width: 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 5px;
-  color: white;
   font-family: Hammersmith-One;
   font-size: 16px;
   place-content: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
 }
 
 .button-card:hover {
