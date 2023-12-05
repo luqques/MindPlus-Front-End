@@ -23,6 +23,40 @@
       }
     }
   </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 
 
@@ -62,6 +96,7 @@
   <div class="intro mt-5 py-3 px-10">
     <div class="text-2xl font-semibold text-black">Editar informações sobre os <b>Colaboradores</b></div>
   </div>
+
 
   <!-- Adicionar Colaborador -->
 
@@ -188,10 +223,70 @@
   </button>
 
   <div class="modal-overlay" id="overlayEditCol" onclick="closeModal('editCol','overlayEditCol')"></div>
-  <div class="modal" id="editCol">
+  <div class="modal w-[50%]" id="editCol">
 
-    <h2>Editar Colaborador do Mind+</h2>
-    <p>[FORM Edição de Colaboradores]</p>
+   <!-- Formulário ALTERAR --> 
+    <div class="container py-8 rounded shadow-md">
+      <form id="editForm" class="max-w-md p-[5%]">
+        
+        <div class="mb-2">
+          <h1>Digite o E-mail para selecionar o colaborador a ser alterado</h1>
+          <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail do Colaborador</label>
+          <input type="email" id="email" name="email"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+            placeholder="colaborador@mail.com">
+        </div>
+  
+        <div class="mb-2">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Novo Nome</label>
+          <input type="text" id="name" name="name"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Jane Doe">
+        </div>
+  
+        <div class="mb-2">
+          <label for="position" class="block text-gray-700 font-semibold mb-2">Novo Cargo</label>
+          <input type="text" id="position" name="position"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+            placeholder="Desenvolvedor(a) Jr.">
+        </div>
+  
+        <div class="mb-2">
+          <label for="contact" class="block text-gray-700 font-semibold mb-2">Novo Contato</label>
+          <input type="text" id="contact" name="contact"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+            placeholder="(xx) xxxxx-xxxx">
+        </div>
+  
+        <div class="mb-2">
+          <label for="business" class="block text-gray-700 font-semibold mb-2">Nova Empresa</label>
+          <input type="text" id="business" name="business"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Mind Plus">
+        </div>
+  
+        <div class="mb-2">
+          <label for="adress" class="block text-gray-700 font-semibold mb-2">Novo Endereço</label>
+          <input type="text" id="adress" name="adress"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+            placeholder="Rua X, Bairro Y, Cidade Z">
+        </div>
+  
+        <div class="mb-4">
+          <label for="contract" class="block text-gray-700 font-semibold mb-2">Novo Modelo de Contrato </label>
+          <select type="text" name="" id="contract" class="w-full px-3 py-2 border rounded-lg">
+            <option selected>Selecione uma opção</option>
+            <option value="clt">CLT</option>
+            <option value="pj">PJ</option>
+            <option value="estagio">Estagiário</option>
+          </select>
+        </div>
+  
+        <button type="button" onclick="editEmployee()"
+          class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">Salvar
+          Alterações</button>
+      </form>
+    </div>
+
+
   </div>
 
 
