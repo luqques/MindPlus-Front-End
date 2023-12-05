@@ -204,10 +204,26 @@
   <div class="modal-overlay" id="overlayDelCol" onclick="closeModal('delCol','overlayDelCol')"></div>
   <div class="modal" id="delCol">
 
-    <h2>Remover Colaborador do Mind+</h2>
-    <p>[FORM Remoção de Colaboradores]</p>
-  </div>
+    <h2 class="text-2xl font-semibold mb-4">Remover Colaborador</h2>
 
+    <form>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-600">E-mail do Funcionário:</label>
+        <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <div class="mb-4">
+        <label for="confirmation" class="flex items-center">
+          <input type="checkbox" id="confirmation" name="confirmation" class="form-checkbox">
+          <span class="ml-2 text-sm">Confirmar exclusão</span>
+        </label>
+      </div>
+
+      <button type="button" onclick="deleteEmployee()"
+        class="bg-blue-800 text-white px-4 py-2 rounded-md cursor-pointer transition-opacity hover:opacity-80">Remover</button>
+    </form>
+
+  </div>
 
   <!-- Visualizar Colaboradores -->
 
@@ -224,6 +240,7 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="../utils/index.js"></script>
+  <script src="meus-colaboradores.js"></script>
 </body>
 
 </html>
