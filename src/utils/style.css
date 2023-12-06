@@ -111,7 +111,7 @@
         display: block;
         z-index: -10 !important;
     }
-    
+
     /* - - - 2.2 GOALS - - - */
 
     .goal-1-b {
@@ -196,7 +196,7 @@
 }
 
 @media (max-width: 431px) {
-    
+
     /* - - - BUSINESS - - - */
 
     #bsn-btn {
