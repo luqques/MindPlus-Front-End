@@ -15,3 +15,4 @@ $(document).ready(function() {
         window.location.href = "./opine.html";
     });
 });
+//  lembrar de criar um botao para voltar em todas as rotas
