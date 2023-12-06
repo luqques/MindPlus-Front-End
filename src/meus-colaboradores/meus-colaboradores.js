@@ -52,14 +52,14 @@ function addEmployee() {
   } else {
     companyError.textContent = '';
   }
-/*
+  
   if (!passwordInput.checkValidity()) {
     passwordError.textContent = 'Por favor, insira uma senha.';
     isValid = false
   } else {
     passwordError.textContent = '';
   }
-  */
+
 }
 
 
