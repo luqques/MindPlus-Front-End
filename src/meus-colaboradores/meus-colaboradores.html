@@ -162,13 +162,14 @@
       <input type="text" id="companyAlt" name="companyAlt" required class="i-form" placeholder="Mind Plus">
       <span class="error" id="companyErrorAlt"></span>
 
-      <label for="contratacao" id="mdc">Novo Modelo de Contrato:</label>
-      <select name="" id="" class="i-select">
+      <label for="contratacao" id="">Novo Modelo de Contrato:</label>
+      <select name="" id="NMC" class="i-select">
         <option selected>Selecione uma opção</option>
         <option value="clt">CLT</option>
         <option value="pj">PJ</option>
         <option value="estagio">Estagiário</option>
-      </select>
+      </select>   <!-- tornar option selected não enviável -->
+      <span class="error" id="NMCError"></span>
 
       <button type="button"
         class="bg-blue-700 text-white w-full py-2 px-4 rounded hover:opacity-75" onclick="editEmployee()">Salvar

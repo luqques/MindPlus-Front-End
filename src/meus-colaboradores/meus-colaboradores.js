@@ -67,12 +67,14 @@ function addEmployee() {
 
 function editEmployee() {
   
-  let emailInput = document.getElementById('emailAlt');
-  let nameInput = document.getElementById('nameAlt');
-  let contactInput = document.getElementById('contactAlt');
-  let addressInput = document.getElementById('addressAlt');
-  let officeInput = document.getElementById('officeAlt');
-  let companyInput = document.getElementById('companyAlt');
+  let emailInput = document.getElementById('emailAlt').value;
+  let nameInput = document.getElementById('nameAlt').value;
+  let contactInput = document.getElementById('contactAlt').value;
+  let addressInput = document.getElementById('addressAlt').value;
+  let officeInput = document.getElementById('officeAlt').value;
+  let companyInput = document.getElementById('companyAlt').value;
+  let contractSelect = document.getElementById('NMC').value;
+  console.log(contractSelect)
 
   let emailError = document.getElementById('emailErrorAlt');
   let nameError = document.getElementById('nameErrorAlt');
@@ -80,42 +82,69 @@ function editEmployee() {
   let addressError = document.getElementById('addressErrorAlt');
   let officeError = document.getElementById('officeErrorAlt');
   let companyError = document.getElementById('companyErrorAlt');
+  let contractError = document.getElementById('NMCError');
 
-  if (emailInput.text == null || nameInput.text.lenght < 5) {
+  if (emailInput == '' || emailInput.length < 5) {
     emailError.textContent = 'Insira um endereço de e-mail válido.';
   } else {
     emailError.textContent = '';
   }
 
-  if (nameInput.text == null || nameInput.text.lenght < 5) {
+  if (nameInput == '') {
     nameError.textContent = 'Preencha este campo.';
+  } else if ( nameInput.length < 5) {
+    nameError.textContent = 'O nome é inválido.';
+  } else if (containsNumbers(nameInput)) {
+    nameError.textContent = 'O nome não pode conter números.';
   } else {
     nameError.textContent = '';
   }
 
-  if (contactInput.text == null || nameInput.text.lenght < 5) {
+  if (contactInput == '') {
     contactError.textContent = 'Insira um contato.';
+  } else if (contactInput.length < 8) {
+    contactError.textContent = 'O nº de telefone é inválido.';
+  } else if (containsLetters(contactInput)) {
+    contactError.textContent = 'O nº de telefone não pode conter letras.';
   } else {
     contactError.textContent = '';
   }
 
-  if (addressInput.text == null || nameInput.text.lenght < 5) {
+  if (addressInput == '' || addressInput.length < 5) {
     addressError.textContent = 'Insira um endereço.';
   } else {
     addressError.textContent = '';
   }
 
-  if (officeInput.text == null || nameInput.text.lenght < 5) {
+  if (officeInput == '' || officeInput.length < 5) {
     officeError.textContent = 'Insira um cargo.';
+  } else if (containsNumbers(officeInput)) {
+    officeError.textContent = 'O cargo não pode conter números.';
   } else {
     officeError.textContent = '';
   }
 
-  if (companyInput.text == null || nameInput.text.lenght < 5) {
+  if (companyInput == '') {
     companyError.textContent = 'Insira uma empresa.';
   } else {
     companyError.textContent = '';
   }
+
+  if (contractSelect == 'Selecione uma opção') {
+    NMCError.textContent = 'Selecione uma opção válida.';
+  } else {
+    NMCError.textContent = '';
+  }
+}
+
+// Verifica se tem números
+function containsNumbers(input) {
+  return /\d/.test(input);
+}
+
+// Verifica se tem letras
+function containsLetters(input) {
+  return /[a-zA-Z]/.test(input);
 }
 
 
