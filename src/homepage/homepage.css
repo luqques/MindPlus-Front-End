@@ -3,6 +3,10 @@
   src: url(../../assets/fonts/HammersmithOne-Regular.ttf);
 }
 
+body {
+  background-color: rgb(228, 240, 251);
+}
+
 .background-banner {
   display: flex;
   width: 100%;
@@ -23,7 +27,7 @@
 }
 
 .banner {
-  color: white;
+  color: #e3e2e6;
   font-size: 25px;
   place-content: center;
   text-align: center;
@@ -51,7 +55,7 @@
   height: 450px;
   padding: 10px;
   margin-top: 50px;
-  border-color: #004bad3a;
+  border: 1px solid #3372c420;
   background-color: aliceblue;
   border-radius: 10px;
 }

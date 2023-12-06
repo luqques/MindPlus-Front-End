@@ -15,6 +15,13 @@ $(() => {
     }
     $("#email").removeClass("invalid");
 
+    if (!dadosUsuario.contato) {
+      alert("Contato não informado");
+      $("#contato").addClass("invalid");
+      return;
+    }
+    $("#contato").removeClass("invalid");
+
     if (!dadosUsuario.endereco) {
       alert("Endereco não informado");
       $("#endereco").addClass("invalid");
