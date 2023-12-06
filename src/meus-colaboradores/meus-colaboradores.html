@@ -22,40 +22,6 @@
       }
     }
   </script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    form {
-      max-width: 300px;
-      margin: 20px auto;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
 
 
@@ -64,7 +30,7 @@
 <body>
   <header class="my-header">
     <div class="logo">
-      <a href="../homepage/homepage.css">
+      <a href="../homepage/homepage.html">
         <img src="../../assets/images/logo-sem-escrita.png" alt="Logo" />
       </a>
     </div>
@@ -79,6 +45,7 @@
     </div>
     <div id="menu-lateral">
       <ul class="menu-lateral-options">
+        <li><a href="../homepage/homepage.html">Início</a></li>
         <li><a href="../estatisticas/estatisticas.html">Estatísticas</a></li>
         <li><a href="../colaboradores/colaboradores.html">Colaboradores</a></li>
         <li><a href="../metas/metas.html">Metas</a></li>
@@ -144,11 +111,10 @@
         <option value="estagio">Estagiário</option>
       </select>
 
-      <!--
       <label for="password" class="l-form" id="pass">Senha:</label>
       <input type="password" id="password" name="password" required class="i-form">
       <span class="error" id="passwordError"></span>
-        -->
+
       <button type="button"
         class="bg-blue-700 text-white w-full py-2 px-4 rounded hover:opacity-75"
         onclick="addEmployee()">Cadastrar</button>
@@ -165,7 +131,7 @@
   <div class="modal-overlay" id="overlayEditCol" onclick="closeModal('editCol','overlayEditCol')"></div>
   <div class="modal" id="editCol">
 
-    <!-- Formulário ALTERAR -->
+ <!-- Formulário ALTERAR -->
     <div class="text-center font-bold text-lg mt-6 pt-6">
       <p>Digite o E-mail para selecionar o colaborador a ser alterado<p>
     </div>

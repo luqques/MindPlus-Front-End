@@ -6,10 +6,12 @@
 @media (max-width: 3000px) {
     .my-header {
         height: 100px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         background-color: #004AAD;
         font-family: Hammersmith-One;
+        /* position: fixed; */
+        top: 0;
     }
 
     .logo {
@@ -67,8 +69,11 @@
 
 @media (max-width: 430px) {
 
-    .header-items,
-    .user-icon {
+    body {
+        z-index: -10 !important;
+    }
+
+    .header-items {
         visibility: hidden;
     }
 
@@ -76,7 +81,7 @@
     #open-menu-lateral {
         font-size: 30px;
         margin-top: 30px;
-        margin-left: 85%;
+        margin-left: 40px;
         position: absolute;
         visibility: visible;
         transform: rotate(90deg);
@@ -87,19 +92,12 @@
     }
 
     .logo {
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-        color: white;
-        cursor: pointer;
-    }
-
-    .logo img {
-        width: 1000px;
+        visibility: hidden;
     }
 
     .menu-lateral-ativo {
         display: block !important;
+        z-index: 10 !important;
     }
 
     .menu-lateral-options,
@@ -113,11 +111,11 @@
         width: 250px;
         height: 100%;
         padding-top: 100px;
-        z-index: 5;
+        z-index: 10 !important;
         background-color: rgba(8, 65, 139);
         display: none;
-        transition: 0.5s;
         font-family: Hammersmith-One;
+        transition: transform 1s ease;
     }
 
     #menu-lateral ul li {
@@ -141,25 +139,40 @@
         transition: 0.3s;
     }
 
+    .user-icon {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-icon img {
+        width: 100%;
+    }
+
     #btn-close-menu-lateral {
         color: white;
         font-family: Hammersmith-One;
         padding: 30px;
-        margin-top: 300px;
+        margin-top: 100px;
         width: 100%;
         cursor: pointer;
         position: absolute;
+        text-align: right;
     }
 
     #btn-close-menu-lateral:hover {
         color: white;
         font-family: Hammersmith-One;
         padding: 30px;
-        margin-top: 300px;
+        margin-top: 100px;
         width: 100%;
         cursor: pointer;
         position: absolute;
         background-color: rgb(56, 107, 248);
         transition: 1s;
+    }
+
+    #close-menu-lateral img {
+        width: 100px;
     }
 }
