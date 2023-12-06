@@ -27,7 +27,6 @@
         padding-top: 2%;
         padding-left: 4%;
         padding-bottom: 2%;
-        margin-top: 3.5%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -111,7 +110,7 @@
         display: block;
         z-index: -10 !important;
     }
-    
+
     /* - - - 2.2 GOALS - - - */
 
     .goal-1-b {
@@ -196,7 +195,7 @@
 }
 
 @media (max-width: 431px) {
-    
+
     /* - - - BUSINESS - - - */
 
     #bsn-btn {
@@ -224,7 +223,6 @@
         padding-top: 2%;
         padding-left: 4%;
         padding-bottom: 2%;
-        margin-top: 3.5%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
