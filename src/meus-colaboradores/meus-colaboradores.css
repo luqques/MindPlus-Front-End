@@ -1,0 +1,36 @@
+/* Registro de Colaboradores ------------ */
+.l-form {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.i-form {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+   
+}
+
+.i-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
