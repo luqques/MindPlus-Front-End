@@ -1,12 +1,11 @@
 <!doctype html>
 <html>
-<link rel="stylesheet" href="meus-colaboradores.css">
-<link rel="stylesheet" href="meus-colaboradores.js">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meus Colaboradores</title>
+  <link rel="stylesheet" href="meus-colaboradores.css">
   <link rel="stylesheet" href="../utils/style.css">
   <link rel="stylesheet" href="../utils/header.css">
   <link rel="stylesheet" href="../utils/reset.css">
@@ -23,40 +22,6 @@
       }
     }
   </script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    form {
-      max-width: 300px;
-      margin: 20px auto;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
 
 
@@ -86,11 +51,11 @@
         <li><a href="../metas/metas.html">Metas</a></li>
       </ul>
       <div id="close-menu-lateral" class="grid flex place-content-end">
-        <p id="btn-close-menu-lateral">
-          << </p>
+        <p id="btn-close-menu-lateral"></p>
       </div>
     </div>
   </header>
+
 
   <!-- Introdução -->
 
@@ -108,34 +73,35 @@
   <div class="modal-overlay" id="overlayAddCol" onclick="closeModal('addCol','overlayAddCol')"></div>
   <div class="modal" id="addCol">
 
+    <!-- Formulário ADICIONAR -->
     <div class="p-4 m-5 text-center font-bold text-2xl">
       <h1>Cadastro Colaborador</h1>
     </div>
 
     <form class="max-w-300px mx-auto my-10">
       <label for="name" class="l-form">Nome:</label>
-      <input type="text" id="name" name="name" required class="i-form" placeholder="Nome colaborador">
-      <span class="error" id="nameError"></span>
+      <input type="text" id="nameAdd" name="nameAdd" required class="i-form" placeholder="Nome do colaborador">
+      <span class="error" id="nameErrorAdd"></span>
 
       <label for="email" class="l-form">E-mail:</label>
-      <input type="email" id="email" name="email" required class="i-form" placeholder="colaborador@mail.com">
-      <span class="error" id="emailError"></span>
+      <input type="email" id="emailAdd" name="emailAdd" required class="i-form" placeholder="colaborador@mail.com">
+      <span class="error" id="emailErrorAdd"></span>
 
       <label for="contato" class="l-form">Contato:</label>
-      <input type="text" id="contact" name="contact" required class="i-form" placeholder="(00) 0000-0000">
-      <span class="error" id="contactError"></span>
+      <input type="text" id="contactAdd" name="contactAdd" required class="i-form" placeholder="(xx) xxxxx-xxxx">
+      <span class="error" id="contactErrorAdd"></span>
 
       <label for="endereco" class="l-form">Endereço:</label>
-      <input type="text" id="address" name="address" required class="i-form" placeholder="Rua, Bairro, Cidade">
-      <span class="error" id="addressError"></span>
+      <input type="text" id="addressAdd" name="addressAdd" required class="i-form" placeholder="Rua, Bairro e Cidade">
+      <span class="error" id="addressErrorAdd"></span>
 
       <label for="cargo" class="l-form">Cargo:</label>
-      <input type="text" id="office" name="office" required class="i-form">
-      <span class="error" id="officeError"></span>
+      <input type="text" id="officeAdd" name="officeAdd" required class="i-form" placeholder="Analista de Marketing">
+      <span class="error" id="officeErrorAdd"></span>
 
       <label for="empresa" class="l-form">Empresa:</label>
-      <input type="text" id="company" name="company" required class="i-form">
-      <span class="error" id="companyError"></span>
+      <input type="text" id="companyAdd" name="companyAdd" required class="i-form" placeholder="Mind Plus">
+      <span class="error" id="companyErrorAdd"></span>
 
       <label for="contratacao" id="mdc">Modelo de contratação:</label>
       <select name="" id="" class="i-select">
@@ -150,8 +116,8 @@
       <span class="error" id="passwordError"></span>
 
       <button type="button"
-        class="bg-blue-700 text-white px-40 mt-5 p-2 ml-60 mr-60 border-none rounded-md cursor-pointer hover:opacity-75"
-        onclick="validateForm()">Cadastrar</button>
+        class="bg-blue-700 text-white w-full py-2 px-4 rounded hover:opacity-75"
+        onclick="addEmployee()">Cadastrar</button>
     </form>
   </div>
 
@@ -163,70 +129,51 @@
   </button>
 
   <div class="modal-overlay" id="overlayEditCol" onclick="closeModal('editCol','overlayEditCol')"></div>
-  <div class="modal w-[50%]" id="editCol">
+  <div class="modal" id="editCol">
 
-    <!-- Formulário ALTERAR -->
-    <div class="container py-8 rounded shadow-md">
-      <form id="editForm" class="max-w-md p-[5%]">
-
-        <div class="mb-2">
-          <h1>Digite o E-mail para selecionar o colaborador a ser alterado</h1>
-          <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail do Colaborador</label>
-          <input type="email" id="email" name="email"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-            placeholder="colaborador@mail.com">
-        </div>
-
-        <div class="mb-2">
-          <label for="name" class="block text-gray-700 font-semibold mb-2">Novo Nome</label>
-          <input type="text" id="name" name="name"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Jane Doe">
-        </div>
-
-        <div class="mb-2">
-          <label for="position" class="block text-gray-700 font-semibold mb-2">Novo Cargo</label>
-          <input type="text" id="position" name="position"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-            placeholder="Desenvolvedor(a) Jr.">
-        </div>
-
-        <div class="mb-2">
-          <label for="contact" class="block text-gray-700 font-semibold mb-2">Novo Contato</label>
-          <input type="text" id="contact" name="contact"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-            placeholder="(xx) xxxxx-xxxx">
-        </div>
-
-        <div class="mb-2">
-          <label for="business" class="block text-gray-700 font-semibold mb-2">Nova Empresa</label>
-          <input type="text" id="business" name="business"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Mind Plus">
-        </div>
-
-        <div class="mb-2">
-          <label for="adress" class="block text-gray-700 font-semibold mb-2">Novo Endereço</label>
-          <input type="text" id="adress" name="adress"
-            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-            placeholder="Rua X, Bairro Y, Cidade Z">
-        </div>
-
-        <div class="mb-4">
-          <label for="contract" class="block text-gray-700 font-semibold mb-2">Novo Modelo de Contrato </label>
-          <select type="text" name="" id="contract" class="w-full px-3 py-2 border rounded-lg">
-            <option selected>Selecione uma opção</option>
-            <option value="clt">CLT</option>
-            <option value="pj">PJ</option>
-            <option value="estagio">Estagiário</option>
-          </select>
-        </div>
-
-        <button type="button" onclick="editEmployee()"
-          class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">Salvar
-          Alterações</button>
-      </form>
+ <!-- Formulário ALTERAR -->
+    <div class="text-center font-bold text-lg mt-6 pt-6">
+      <p>Digite o E-mail para selecionar o colaborador a ser alterado<p>
     </div>
 
+    <form class="max-w-300px pb-6 mb-6">
 
+      <label for="email" class="l-form">E-mail:</label>
+      <input type="email" id="emailAlt" name="emailAlt" required class="i-form" placeholder="colaborador@mail.com">
+      <span class="error" id="emailErrorAlt"></span>
+
+      <label for="name" class="l-form">Novo Nome:</label>
+      <input type="text" id="nameAlt" name="nameAlt" required class="i-form" placeholder="Jane Doe">
+      <span class="error" id="nameErrorAlt"></span>
+
+      <label for="contato" class="l-form">Novo Contato:</label>
+      <input type="text" id="contactAlt" name="contactAlt" required class="i-form" placeholder="(xx) xxxxx-xxxx">
+      <span class="error" id="contactErrorAlt"></span>
+
+      <label for="endereco" class="l-form">Novo Endereço:</label>
+      <input type="text" id="addressAlt" name="addressAlt" required class="i-form" placeholder="Rua, Bairro e Cidade">
+      <span class="error" id="addressErrorAlt"></span>
+
+      <label for="cargo" class="l-form">Novo Cargo:</label>
+      <input type="text" id="officeAlt" name="officeAlt" required class="i-form" placeholder="Desenvolvedor(a) Jr.">
+      <span class="error" id="officeErrorAlt"></span>
+
+      <label for="empresa" class="l-form">Nova Empresa:</label>
+      <input type="text" id="companyAlt" name="companyAlt" required class="i-form" placeholder="Mind Plus">
+      <span class="error" id="companyErrorAlt"></span>
+
+      <label for="contratacao" id="mdc">Novo Modelo de Contrato:</label>
+      <select name="" id="" class="i-select">
+        <option selected>Selecione uma opção</option>
+        <option value="clt">CLT</option>
+        <option value="pj">PJ</option>
+        <option value="estagio">Estagiário</option>
+      </select>
+
+      <button type="button"
+        class="bg-blue-700 text-white w-full py-2 px-4 rounded hover:opacity-75" onclick="editEmployee()">Salvar
+        Alterações</button>
+    </form>
   </div>
 
 
@@ -239,6 +186,7 @@
   <div class="modal-overlay" id="overlayDelCol" onclick="closeModal('delCol','overlayDelCol')"></div>
   <div class="modal" id="delCol">
 
+    <!-- Formulário REMOVER -->
     <h2 class="text-2xl font-semibold mb-4">Remover Colaborador</h2>
 
     <form>
@@ -257,8 +205,8 @@
       <button type="button" onclick="deleteEmployee()"
         class="bg-blue-800 text-white px-4 py-2 rounded-md cursor-pointer transition-opacity hover:opacity-80">Remover</button>
     </form>
-
   </div>
+
 
   <!-- Visualizar Colaboradores -->
 
@@ -270,12 +218,12 @@
   <div class="modal" id="readCol">
 
     <h2>Visualizar Colaboradores cadastrados no Mind+</h2>
-    <p>[FORM Visualização de Colaboradores]</p>
+    <p>[FORM Visualização de Colaboradores - PRECISA DE BANCO]</p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="../utils/index.js"></script>
   <script src="meus-colaboradores.js"></script>
-</body>
 
+</body>
 </html>

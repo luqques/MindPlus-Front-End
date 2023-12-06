@@ -25,10 +25,40 @@
     font-size: 12px;
 }
 
-/* ------------------------------------------- */
+/* Estética dos Formulários ------------------------------------------- */
 
+body {
+    font-family: Arial, sans-serif;
+}
 
+form {
+    max-width: 300px;
+    margin: 20px auto;
+}
 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 
 
