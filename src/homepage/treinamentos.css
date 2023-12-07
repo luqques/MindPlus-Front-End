@@ -42,7 +42,25 @@
   font-size: 16px;
   border-color: transparent;
   filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.25));
-  color: rgb(65, 61, 61);
+  color: white;
+  background-color: #3372c4;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.button-card:hover {
+  height: 30px;
+  width: 20%;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: Hammersmith-One;
+  font-size: 16px;
+  border-color: transparent;
+  filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.25));
+  color: white;
+  background-color: #1c5caf;
+  transition: 1s;
+  border-radius: 5px;
 }
 
 .menu img {
@@ -118,7 +136,7 @@
     width: 100%;
     border-radius: 10px;
     z-index: 2;
-    background-color:#f0f8ff;
+    background-color: #f0f8ff;
   }
 
   .menu {
