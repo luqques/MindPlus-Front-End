@@ -6,4 +6,9 @@ $(document).ready(function() {
     $('#card2').click(function() {
         window.location.href = "https://www.vittude.com/blog/como-lidar-com-a-raiva/?utm_source=blog&utm_medium=author&utm_content=blog_traffic";
     });
+
+    
+    $('#voltar').click(function() {
+        window.location.href = "./homepage.html";
+    });
 });
