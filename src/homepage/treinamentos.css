@@ -21,6 +21,8 @@
 .center-column {
   display: flex;
   width: 1000px;
+  justify-content: center;
+  position: relative;
   margin-top: 80px;
   position: absolute;
   border-radius: 10px;
@@ -29,7 +31,10 @@
 }
 
 .menu {
-  width: 950px;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  width: 900px;
   padding: 20px;
 }
 
