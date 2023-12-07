@@ -1,10 +1,10 @@
 var loggedText = document.getElementById('keep-logged-in');
 var loggedCheckbox = document.getElementById('checkbox-keep-logged');
-loggedText.addEventListener('click', function() {
-    loggedCheckbox.checked = !loggedCheckbox.checked;
+loggedText.addEventListener('click', function () {
+  loggedCheckbox.checked = !loggedCheckbox.checked;
 });
-loggedCheckbox.addEventListener('click', function() {
-    loggedCheckbox.checked = !loggedCheckbox.checked;
+loggedCheckbox.addEventListener('click', function () {
+  loggedCheckbox.checked = !loggedCheckbox.checked;
 });
 
 $(() => {
@@ -29,9 +29,10 @@ $(() => {
       return;
     }
     $("#senha").removeClass("invalid");
-    
+
     console.log(values);
 
+    // A chamada para a página inicial foi retirada para que o console.log com o JSON no inspecionar da página não seja apagado.
     // window.location.href = "../homepage/homepage.html";
   });
 });

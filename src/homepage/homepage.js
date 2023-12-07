@@ -1,3 +1,3 @@
-document.getElementById('treinamentos').addEventListener('click', function() {
-    window.location.href = '/treinamentos.html';
-});
+// document.getElementById('treinamentos').addEventListener('click', function () {
+//     window.location.href = '../homepage/conscientizacao.html';
+// });
